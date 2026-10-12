@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Performance-optimized demo: no external CSS dependencies; LCP image is discovered directly in HTML. -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="CSR Landmark Resorts in Coimbatore offers French and Bali-inspired stays, day outings, dining and event spaces within a 132-acre mango grove.">
+  <meta name="author" content="CSR Landmark Resorts">
+  <meta name="robots" content="noindex,follow">
+  <title>CSR Landmark Resorts | Resort, Day Out & Events in Coimbatore</title>
+  <link rel="canonical" href="https://csrlandmarkresorts.com/">
+
+  <!-- Social sharing -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="CSR Landmark Resorts | Resort, Day Out & Events in Coimbatore">
+  <meta property="og:description" content="French and Bali-inspired stays, day outings, dining and event spaces at CSR Landmark Resorts in Coimbatore.">
+  <meta property="og:url" content="https://csrlandmarkresorts.com/">
+  <meta property="og:site_name" content="CSR Landmark Resorts">
+  <meta property="og:image" content="https://csrlandmarkresorts.com/img/hero_home_1-1.webp">
+  <meta property="og:image:alt" content="CSR Landmark Resorts in Coimbatore">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="CSR Landmark Resorts | Resort, Day Out & Events in Coimbatore">
+  <meta name="twitter:description" content="French and Bali-inspired stays, day outings, dining and event spaces at CSR Landmark Resorts in Coimbatore.">
+  <meta name="twitter:image" content="https://csrlandmarkresorts.com/img/hero_home_1-1.webp">
+
+  <meta name="theme-color" content="#17211d">
+
+  <!-- Test/demo page: keep this URL out of Google while performance testing. -->
+
+  <style>
+
+:root{--csr-dark:#17211d;--csr-green:#2f5b45;--csr-gold:#c79b5a;--csr-cream:#f7f3ec;--csr-white:#fff;--csr-text:#26312b;--csr-muted:#6d766f;--csr-radius:20px;--csr-shadow:0 18px 50px rgba(20,35,27,.10)}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;color:var(--csr-text);background:#fff;font-family:Arial,Helvetica,sans-serif}
+img{max-width:100%;height:auto}
+a{text-decoration:none}
+button{font:inherit}
+.demo-wrap{overflow:hidden}
+.container{width:100%;max-width:1200px;margin:0 auto;padding:0 20px}
+.demo-topbar{background:var(--csr-dark);color:#fff;font-size:13px;padding:9px 0}
+.demo-topbar .inner{display:flex;justify-content:space-between;gap:20px;align-items:center}
+.demo-topbar a{color:#fff}
+.demo-header{position:absolute;z-index:20;top:38px;left:0;right:0;padding:14px 0}
+.demo-header-inner{display:flex;align-items:center;justify-content:space-between;background:rgba(255,255,255,.96);border-radius:18px;padding:9px 12px 9px 18px;box-shadow:0 10px 35px rgba(0,0,0,.12)}
+.demo-logo{display:flex;align-items:center;gap:12px;color:var(--csr-dark);font-weight:700}
+.demo-logo img{width:62px;height:62px;object-fit:contain;border-radius:50%}
+.demo-logo span{line-height:1.05;font-size:15px}
+.demo-logo small{display:block;font-size:10px;letter-spacing:1.3px;font-weight:500;margin-top:4px;color:#68726c}
+.demo-nav{display:flex;align-items:center;gap:7px}
+.demo-nav a{color:#25322b;padding:11px 12px;font-size:13px;font-weight:600;border-radius:10px}
+.demo-nav a:hover{background:var(--csr-cream)}
+.demo-btn{display:inline-flex;align-items:center;justify-content:center;gap:7px;padding:13px 20px;border-radius:999px;background:var(--csr-green);color:#fff!important;font-weight:700;border:1px solid var(--csr-green);transition:transform .2s,background .2s}
+.demo-btn:hover{transform:translateY(-1px);background:#234936}
+.demo-btn.light{background:#fff;color:var(--csr-green)!important;border-color:#fff}
+.demo-btn.outline{background:transparent;color:var(--csr-green)!important;border-color:#b9c7bd}
+.demo-menu{display:none;border:0;background:transparent;font-size:26px;cursor:pointer}
+.demo-mobile-nav{display:none;background:#fff;border-radius:14px;margin-top:7px;padding:12px;box-shadow:0 10px 30px rgba(0,0,0,.15)}
+.demo-mobile-nav.is-open{display:block}
+.demo-mobile-nav a{display:block;padding:9px;color:#26312b}
+.demo-mobile-nav .demo-btn{margin-top:7px;width:100%}
+
+.demo-hero{min-height:720px;position:relative;color:#fff;display:flex;align-items:center;isolation:isolate;overflow:hidden}
+.demo-hero-image{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-2}
+.demo-hero:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(10,25,18,.72),rgba(10,25,18,.30));z-index:-1}
+.demo-hero-content{padding-top:115px;max-width:760px}
+.eyebrow{font-size:12px;letter-spacing:2px;text-transform:uppercase;font-weight:700;color:var(--csr-gold);margin-bottom:14px}
+.demo-hero h1{font-size:clamp(40px,6vw,72px);line-height:1.02;margin:0 0 20px;color:#fff;font-weight:700}
+.demo-hero p{font-size:19px;line-height:1.65;max-width:650px;margin:0 0 28px;color:rgba(255,255,255,.9)}
+.hero-actions{display:flex;flex-wrap:wrap;gap:12px}
+.hero-trust{display:flex;flex-wrap:wrap;gap:10px;margin-top:28px}
+.hero-trust span{padding:9px 13px;border:1px solid rgba(255,255,255,.3);background:rgba(255,255,255,.1);border-radius:999px;font-size:12px}
+
+.experience-bar{margin-top:-42px;position:relative;z-index:5}
+.experience-grid{display:grid;grid-template-columns:repeat(4,1fr);background:#fff;border-radius:22px;box-shadow:var(--csr-shadow);overflow:hidden}
+.experience-card{padding:24px 23px;border-right:1px solid #e8ece8;display:block;color:var(--csr-text);transition:background .2s,transform .2s}
+.experience-card:last-child{border-right:0}
+.experience-card:hover{background:#fbfaf7;transform:translateY(-2px)}
+.experience-icon{font-size:25px;color:var(--csr-green);margin-bottom:11px}
+.experience-card h3{font-size:19px;margin:0 0 7px}
+.experience-card p{font-size:13px;line-height:1.55;color:var(--csr-muted);margin:0 0 10px}
+.experience-card strong{font-size:12px;color:var(--csr-green)}
+
+.demo-section{padding:105px 0}
+.demo-section.cream{background:var(--csr-cream)}
+.section-head{max-width:760px;margin-bottom:42px}
+.section-head.center{text-align:center;margin-left:auto;margin-right:auto}
+.section-head h2{font-size:clamp(31px,4vw,48px);line-height:1.12;margin:0 0 14px;color:var(--csr-dark)}
+.section-head p{color:var(--csr-muted);font-size:16px;line-height:1.7;margin:0}
+.section-kicker{font-size:12px;letter-spacing:2px;text-transform:uppercase;color:var(--csr-green);font-weight:800;margin-bottom:10px}
+
+.about-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:65px;align-items:center}
+.about-images{display:grid;grid-template-columns:1fr .72fr;gap:15px;align-items:end}
+.about-images img{width:100%;height:520px;object-fit:cover;border-radius:var(--csr-radius)}
+.about-images img:last-child{height:360px;margin-bottom:-35px}
+.about-copy h2{font-size:43px;line-height:1.1;color:var(--csr-dark);margin:0 0 18px}
+.about-copy p{line-height:1.8;color:var(--csr-muted)}
+.facts{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin:25px 0}
+.fact{background:#fff;border:1px solid #e5e9e5;border-radius:14px;padding:15px}
+.fact strong{display:block;color:var(--csr-dark);font-size:20px}
+.fact span{font-size:12px;color:var(--csr-muted)}
+
+.card-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.room-card{background:#fff;border-radius:var(--csr-radius);overflow:hidden;box-shadow:0 10px 35px rgba(20,35,27,.08);border:1px solid #edf0ed}
+.room-card figure{margin:0;position:relative}
+.room-card img{width:100%;height:275px;object-fit:cover;display:block}
+.room-card .tag{position:absolute;left:15px;top:15px;background:#fff;padding:7px 10px;border-radius:999px;font-size:11px;font-weight:700;color:var(--csr-green)}
+.room-card-body{padding:21px}
+.room-card h3{font-size:22px;margin:0 0 8px;color:var(--csr-dark)}
+.room-card p{font-size:13px;color:var(--csr-muted);line-height:1.6;min-height:42px}
+.card-link{font-size:13px;font-weight:800;color:var(--csr-green)}
+.card-actions{display:flex;gap:8px;margin-top:15px;flex-wrap:wrap}
+.small-btn{padding:9px 13px;border-radius:999px;font-size:12px;font-weight:700;border:1px solid #d7ded8;color:var(--csr-green)}
+.small-btn.primary{background:var(--csr-green);color:#fff;border-color:var(--csr-green)}
+
+.feature-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.feature{padding:23px;background:#fff;border-radius:16px;border:1px solid #e7ebe7}
+.feature .icon{font-size:25px;margin-bottom:12px;color:var(--csr-green)}
+.feature h3{font-size:16px;margin:0 0 6px}
+.feature p{font-size:12px;color:var(--csr-muted);margin:0;line-height:1.5}
+
+.split{display:grid;grid-template-columns:1fr 1fr;gap:0;align-items:stretch}
+.split-img{min-height:520px;position:relative;overflow:hidden;border-radius:20px 0 0 20px}
+.split-img img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.split-copy{background:var(--csr-dark);color:#fff;padding:65px;border-radius:0 20px 20px 0;display:flex;flex-direction:column;justify-content:center}
+.split-copy h2{font-size:42px;line-height:1.1;margin:0 0 18px}
+.split-copy p{color:rgba(255,255,255,.78);line-height:1.75}
+.check-list{list-style:none;padding:0;margin:22px 0}
+.check-list li{padding:8px 0;color:#fff;font-size:14px}
+.check-list li:before{content:"✓";color:var(--csr-gold);font-weight:800;margin-right:10px}
+
+.review-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.review{background:#fff;padding:27px;border-radius:18px;border:1px solid #e7ebe7}
+.stars{color:#d09d35;letter-spacing:2px;margin-bottom:13px}
+.review p{font-size:14px;line-height:1.75;color:#4e5952}
+.review strong{font-size:13px;color:var(--csr-dark)}
+
+.blog-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.blog-card{border-radius:18px;overflow:hidden;background:#fff;border:1px solid #e7ebe7}
+.blog-card img{width:100%;height:220px;object-fit:cover;display:block}
+.blog-body{padding:20px}
+.blog-body small{color:var(--csr-green);font-weight:700}
+.blog-body h3{font-size:19px;line-height:1.3;margin:9px 0}
+.blog-body p{font-size:13px;line-height:1.6;color:var(--csr-muted)}
+
+.final-cta{background:linear-gradient(100deg,#244735,#3d6950);color:#fff;border-radius:24px;padding:65px 60px;display:flex;align-items:center;justify-content:space-between;gap:30px}
+.final-cta h2{font-size:40px;margin:0 0 10px}
+.final-cta p{margin:0;color:rgba(255,255,255,.8)}
+
+.demo-footer{background:#131b17;color:#fff;padding:65px 0 20px}
+.footer-grid{display:grid;grid-template-columns:1.5fr 1fr 1fr 1.3fr;gap:40px}
+.demo-footer h4{font-size:14px;text-transform:uppercase;letter-spacing:1px;margin:0 0 18px}
+.demo-footer p,.demo-footer li{font-size:13px;line-height:1.8;color:#bfc8c1}
+.demo-footer ul{list-style:none;padding:0;margin:0}
+.demo-footer a{color:#bfc8c1}
+.demo-footer a:hover{color:#fff}
+.copyright{border-top:1px solid rgba(255,255,255,.1);margin-top:35px;padding-top:18px;font-size:12px;color:#8f9a92}
+.mobile-cta{display:none}
+
+
+
+.video-section{padding:72px 0 40px;background:#fff}
+.video-card{position:relative;max-width:1120px;margin:0 auto;border-radius:24px;overflow:hidden;background:#17211d;box-shadow:0 18px 50px rgba(20,35,27,.14);aspect-ratio:16/9}
+.video-poster{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block}
+.video-overlay{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;background:linear-gradient(90deg,rgba(10,25,18,.48),rgba(10,25,18,.16));cursor:pointer;border:0;width:100%;height:100%;color:#fff}
+.video-play{width:78px;height:78px;border-radius:50%;display:flex;align-items:center;justify-content:center;background:#fff;color:#2f5b45;box-shadow:0 10px 30px rgba(0,0,0,.25);font-size:30px;padding-left:5px;transition:transform .2s,box-shadow .2s}
+.video-overlay:hover .video-play{transform:scale(1.06);box-shadow:0 14px 36px rgba(0,0,0,.32)}
+.video-label{position:absolute;left:28px;bottom:25px;font-size:13px;font-weight:700;letter-spacing:.5px;text-shadow:0 2px 10px rgba(0,0,0,.4)}
+.video-iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+.video-note{max-width:760px;margin:18px auto 0;text-align:center;color:#6d766f;font-size:13px;line-height:1.6}
+
+.enquiry-section{padding:90px 0;background:#f7f3ec}
+.enquiry-card{display:grid;grid-template-columns:.82fr 1.18fr;background:#fff;border-radius:24px;overflow:hidden;box-shadow:0 18px 50px rgba(20,35,27,.10);border:1px solid #e7ebe7}
+.enquiry-intro{padding:48px;background:linear-gradient(145deg,#17211d,#315b45);color:#fff}
+.enquiry-intro .section-kicker{color:#d8b77b}
+.enquiry-intro h2{font-size:40px;line-height:1.12;margin:0 0 15px}
+.enquiry-intro p{color:rgba(255,255,255,.78);line-height:1.75;margin:0 0 25px}
+.enquiry-points{list-style:none;padding:0;margin:0}
+.enquiry-points li{padding:9px 0;color:#fff;font-size:14px}
+.enquiry-points li:before{content:"✓";color:#d8b77b;font-weight:800;margin-right:10px}
+.enquiry-form{padding:48px}
+.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.form-field{display:flex;flex-direction:column;gap:7px}
+.form-field.full{grid-column:1/-1}
+.form-field label{font-size:12px;font-weight:800;color:#26312b}
+.form-field label span{color:#b35a4b}
+.form-field label small{font-weight:500;color:#7a837d}
+.form-field input,.form-field select,.form-field textarea{width:100%;border:1px solid #dce3dd;border-radius:12px;background:#fbfcfb;padding:13px 14px;font:inherit;font-size:14px;color:#26312b;outline:0;transition:border-color .2s,box-shadow .2s}
+.form-field input:focus,.form-field select:focus,.form-field textarea:focus{border-color:#2f5b45;box-shadow:0 0 0 3px rgba(47,91,69,.10)}
+.form-field textarea{min-height:105px;resize:vertical}
+.form-note{font-size:11px;color:#7a837d;margin:12px 0 18px;line-height:1.5}
+.form-submit{width:100%;border:0;cursor:pointer}
+.form-submit:hover{transform:translateY(-1px)}
+
+@media(max-width:991px){
+.demo-nav{display:none}.demo-menu{display:block}
+.experience-grid{grid-template-columns:repeat(2,1fr)}
+.experience-card:nth-child(2){border-right:0}
+.experience-card:nth-child(-n+2){border-bottom:1px solid #e8ece8}
+.about-grid,.split{grid-template-columns:1fr}
+.about-images{margin-bottom:30px}.split-img{border-radius:20px 20px 0 0}.split-copy{border-radius:0 0 20px 20px}
+.card-grid,.review-grid,.blog-grid{grid-template-columns:repeat(2,1fr)}
+.feature-grid{grid-template-columns:repeat(3,1fr)}
+.footer-grid{grid-template-columns:repeat(2,1fr)}
+  .enquiry-card{grid-template-columns:1fr}.enquiry-intro{padding:38px}.enquiry-form{padding:38px}
+}
+@media(max-width:767px){
+.demo-topbar{display:none}
+.demo-header{top:10px}
+.demo-header-inner{padding:6px 9px 6px 12px}
+.demo-logo img{width:50px;height:50px}.demo-logo span{font-size:12px}.demo-logo small{font-size:8px}
+.demo-hero{min-height:680px}
+.demo-hero-content{padding-top:100px}
+.demo-hero h1{font-size:42px}.demo-hero p{font-size:16px}
+.experience-grid{grid-template-columns:1fr}
+.experience-card{border-right:0!important;border-bottom:1px solid #e8ece8}
+.experience-card:last-child{border-bottom:0}
+.demo-section{padding:75px 0}
+.about-images{grid-template-columns:1fr}.about-images img,.about-images img:last-child{height:330px;margin:0}
+.about-copy h2{font-size:34px}.facts{grid-template-columns:1fr}
+.card-grid,.review-grid,.blog-grid,.feature-grid{grid-template-columns:1fr}
+.split-img{min-height:330px}.split-copy{padding:40px 28px}.split-copy h2{font-size:34px}
+.final-cta{padding:40px 28px;display:block}.final-cta .demo-btn{margin-top:22px}
+.footer-grid{grid-template-columns:1fr}.enquiry-section{padding:70px 0}.enquiry-form{padding:30px 22px}.enquiry-intro{padding:34px 22px}.enquiry-intro h2{font-size:32px}.form-grid{grid-template-columns:1fr}.form-field.full{grid-column:auto}
+.mobile-cta{position:fixed;display:grid;grid-template-columns:repeat(3,1fr);bottom:0;left:0;right:0;z-index:100;background:#fff;box-shadow:0 -8px 25px rgba(0,0,0,.15)}
+.mobile-cta a{padding:13px 5px;text-align:center;font-size:11px;font-weight:800;color:var(--csr-dark);border-right:1px solid #e4e8e4}
+.mobile-cta a:last-child{background:var(--csr-green);color:#fff;border:0}
+body{padding-bottom:53px}
+}
+  </style>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Resort",
+    "name": "CSR Landmark Resorts",
+    "url": "https://csrlandmarkresorts.com/",
+    "logo": "https://csrlandmarkresorts.com/img/logo.png",
+    "image": "https://csrlandmarkresorts.com/img/hero_home_1-1.webp",
+    "description": "French and Bali-inspired resort stays, day outings, dining and event spaces in Coimbatore.",
+    "telephone": "+91 95850 99992",
+    "email": "gm@csrlandmarkresorts.com",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "First Street, Thenkarai Village, Mathipalayam, Perur",
+      "addressLocality": "Coimbatore",
+      "addressRegion": "Tamil Nadu",
+      "postalCode": "641010",
+      "addressCountry": "IN"
+    },
+    "areaServed": {
+      "@type": "City",
+      "name": "Coimbatore"
+    }
+  }
+  </script>
+</head>
+
+<body>
+<div class="demo-wrap">
+
+  <div class="demo-topbar">
+    <div class="container inner">
+      <span>French & Bali-inspired resort experience in Coimbatore</span>
+      <span>Call: <a href="tel:+919585099992">+91 95850 99992</a></span>
+    </div>
+  </div>
+
+  <header class="demo-header">
+    <div class="container">
+      <div class="demo-header-inner">
+        <a href="index.html" class="demo-logo">
+          <img src="img/logo.png" width="62" height="62" alt="CSR Landmark Resorts">
+          <span>CSR Landmark Resorts<small>COIMBATORE</small></span>
+        </a>
+        <nav class="demo-nav" aria-label="Main navigation">
+          <a href="french-town.html">Stay</a>
+          <a href="dayout.html">Day Out</a>
+          <a href="banquet.html">Events</a>
+          <a href="restaurant.html">Dining</a>
+          <a href="about.html">About</a>
+          <a href="blog.html">Blog</a>
+          <a href="contacts.html">Contact</a>
+          <a class="demo-btn" href="booking.html">Check Availability</a>
+        </nav>
+        <button class="demo-menu" id="demoMenuButton" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="demoMobileNav">☰</button>
+      </div>
+      <nav id="demoMobileNav" class="demo-mobile-nav" aria-label="Mobile navigation">
+        <a href="french-town.html">Stay</a>
+        <a href="dayout.html">Day Out</a>
+        <a href="banquet.html">Events</a>
+        <a href="restaurant.html">Dining</a>
+        <a href="about.html">About</a>
+        <a href="blog.html">Blog</a>
+        <a href="contacts.html">Contact</a>
+        <a class="demo-btn" href="booking.html">Check Availability</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="demo-hero">
+      <img class="demo-hero-image"
+           src="img/hero_home_1-1.webp"
+           width="1920"
+           height="720"
+           alt=""
+           fetchpriority="high"
+           decoding="async">
+      <div class="container">
+        <div class="demo-hero-content">
+          <div class="eyebrow">CSR Landmark Resorts · Coimbatore</div>
+          <h1>Stay. Explore. Celebrate.</h1>
+          <p>French & Bali-inspired stays, relaxing day-out experiences, dining and memorable events surrounded by the natural beauty of Coimbatore.</p>
+          <div class="hero-actions">
+            <a class="demo-btn" href="booking.html">Check Availability</a>
+            <a class="demo-btn light" href="dayout.html">Explore Day Out</a>
+            <a class="demo-btn outline" style="color:#fff!important;border-color:rgba(255,255,255,.6)" href="wedding-landing.html">Plan an Event</a>
+          </div>
+          <div class="hero-trust">
+            <span>132-acre mango grove</span><span>French & Bali themes</span><span>Rooms & villas</span><span>Events & day out</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="video-section" aria-labelledby="resort-video-title">
+      <div class="container">
+        <div class="section-head center" style="margin-bottom:28px">
+          <div class="section-kicker">See CSR Landmark Resorts</div>
+          <h2 id="resort-video-title">Experience the resort before you visit</h2>
+          <p>Take a quick look at the resort, surroundings and experiences at CSR Landmark Resorts.</p>
+        </div>
+
+        <div class="video-card" id="resortVideo">
+          <img
+            class="video-poster"
+            src="https://img.youtube.com/vi/Vkn-rdiqUxI/maxresdefault.webp"
+            width="1280"
+            height="720"
+            alt="CSR Landmark Resorts video preview"
+            loading="lazy"
+            decoding="async">
+          <button class="video-overlay" id="videoPlayButton" type="button"
+                  aria-label="Play CSR Landmark Resorts video">
+            <span class="video-play" aria-hidden="true">▶</span>
+            <span class="video-label">CSR Landmark Resorts · Watch video</span>
+          </button>
+        </div>
+
+        <p class="video-note">Watch the video to explore the resort atmosphere, surroundings and experiences.</p>Watch the video to explore the resort atmosphere, surroundings and experiences.</p>Watch the video to explore the resort atmosphere, surroundings and experiences.</p>
+      </div>
+    </section>
+
+    <section class="experience-bar">
+      <div class="container">
+        <div class="experience-grid">
+          <a class="experience-card" href="french-town.html">
+            <div class="experience-icon">🏨</div>
+            <h3>Stay</h3>
+            <p>Explore French-inspired rooms and Bali-themed villas.</p>
+            <strong>Explore rooms →</strong>
+          </a>
+          <a class="experience-card" href="dayout.html">
+            <div class="experience-icon">🌿</div>
+            <h3>Day Out</h3>
+            <p>Plan a relaxed day with activities, pool time and nature.</p>
+            <strong>View day out →</strong>
+          </a>
+          <a class="experience-card" href="wedding-landing.html">
+            <div class="experience-icon">💍</div>
+            <h3>Weddings & Events</h3>
+            <p>Discover spaces for weddings, celebrations and gatherings.</p>
+            <strong>Explore events →</strong>
+          </a>
+          <a class="experience-card" href="restaurant.html">
+            <div class="experience-icon">🍽️</div>
+            <h3>Dining</h3>
+            <p>Discover Bon Appetit and plan your dining experience.</p>
+            <strong>Explore dining →</strong>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="demo-section">
+      <div class="container">
+        <div class="about-grid">
+          <div class="about-images">
+            <img src="img/home_2.webp" width="900" height="1100" alt="CSR Landmark Resorts in Coimbatore" loading="lazy">
+            <img src="img/home_1.webp" width="700" height="900" alt="French and Bali-inspired resort experience at CSR Landmark Resorts" loading="lazy">
+          </div>
+          <div class="about-copy">
+            <div class="section-kicker">A resort experience in Coimbatore</div>
+            <h2>Nature, comfort and memorable experiences in one place.</h2>
+            <p>CSR Landmark Resorts combines French and Bali-inspired architecture with the natural setting of a 132-acre mango grove. Whether you are planning a stay, family day out, celebration or event, choose the experience that fits your visit.</p>
+            <div class="facts">
+              <div class="fact"><strong>132 acres</strong><span>Mango grove setting</span></div>
+              <div class="fact"><strong>French + Bali</strong><span>Inspired stays</span></div>
+              <div class="fact"><strong>4 ways</strong><span>Stay · Day Out · Events · Dining</span></div>
+            </div>
+            <a class="demo-btn" href="about.html">Discover CSR Landmark Resorts</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="demo-section cream" id="rooms">
+      <div class="container">
+        <div class="section-head">
+          <div class="section-kicker">Choose your stay</div>
+          <h2>Rooms & Villas</h2>
+          <p>Explore the accommodation styles available at CSR Landmark Resorts and choose the stay that suits your visit.</p>
+        </div>
+        <div class="card-grid">
+          <article class="room-card">
+            <figure><img src="img/rooms/VJC01822.webp" width="900" height="650" alt="Bali Pool Villa at CSR Landmark Resorts in Coimbatore" loading="lazy"><span class="tag">Bali-inspired</span></figure>
+            <div class="room-card-body"><h3>Bali Pool Villa</h3><p>A Bali-inspired villa experience for guests looking for a distinctive stay.</p><div class="card-actions"><a class="small-btn primary" href="bali-pool-villa.html">View Villa</a><a class="small-btn" href="booking.html">Check availability</a></div></div>
+          </article>
+          <article class="room-card">
+            <figure><img src="img/rooms/classic-6.webp" width="900" height="650" alt="Bali Classic Villa at CSR Landmark Resorts" loading="lazy"><span class="tag">Bali-inspired</span></figure>
+            <div class="room-card-body"><h3>Bali Classic Villa</h3><p>Explore a Bali-themed accommodation option surrounded by the resort setting.</p><div class="card-actions"><a class="small-btn primary" href="bali-classic-villa.html">View Villa</a><a class="small-btn" href="booking.html">Check availability</a></div></div>
+          </article>
+          <article class="room-card">
+            <figure><img src="img/french-1.webp" width="900" height="650" alt="French Deluxe Room at CSR Landmark Resorts" loading="lazy"><span class="tag">French-inspired</span></figure>
+            <div class="room-card-body"><h3>French Deluxe Room</h3><p>A comfortable French-inspired room for guests planning a resort stay.</p><div class="card-actions"><a class="small-btn primary" href="french-deluxe-room.html">View Room</a><a class="small-btn" href="booking.html">Check availability</a></div></div>
+          </article>
+        </div>
+        <div style="text-align:center;margin-top:28px"><a class="demo-btn outline" href="french-town.html">View all rooms & suites</a></div>
+      </div>
+    </section>
+
+    <section class="demo-section">
+      <div class="container">
+        <div class="section-head center">
+          <div class="section-kicker">Everything in one place</div>
+          <h2>Resort facilities & experiences</h2>
+          <p>Make the most of your visit with facilities and experiences available at CSR Landmark Resorts.</p>
+        </div>
+        <div class="feature-grid">
+          <div class="feature"><div class="icon">🏊</div><h3>Swimming Pool</h3><p>Relax and enjoy pool time during your visit.</p></div>
+          <div class="feature"><div class="icon">🏎️</div><h3>Go-Karting</h3><p>Add an activity-filled element to your resort experience.</p></div>
+          <div class="feature"><div class="icon">👨‍👩‍👧</div><h3>Kids Play Area</h3><p>A family-friendly facility for younger guests.</p></div>
+          <div class="feature"><div class="icon">🍽️</div><h3>Restaurant</h3><p>Enjoy dining at Bon Appetit.</p></div>
+          <div class="feature"><div class="icon">🌴</div><h3>Day Out</h3><p>Plan a day of relaxation and activities.</p></div>
+          <div class="feature"><div class="icon">💍</div><h3>Event Spaces</h3><p>Spaces for weddings and other celebrations.</p></div>
+          <div class="feature"><div class="icon">📶</div><h3>Free Wi-Fi</h3><p>Stay connected during your visit.</p></div>
+          <div class="feature"><div class="icon">🚗</div><h3>Private Parking</h3><p>Convenient parking for resort guests.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="demo-section cream">
+      <div class="container">
+        <div class="split">
+          <div class="split-img">
+            <img src="img/local_amenities_3-1.webp" width="1000" height="700" alt="CSR Landmark Resorts event space" loading="lazy" decoding="async">
+          </div>
+          <div class="split-copy">
+            <div class="section-kicker" style="color:#d8b77b">Weddings & events</div>
+            <h2>Plan a celebration that feels like your own.</h2>
+            <p>From weddings and outdoor lawn celebrations to other gatherings, explore CSR's event spaces and choose the setting that suits your occasion.</p>
+            <ul class="check-list">
+              <li>Wedding and celebration spaces</li>
+              <li>Outdoor and garden-style settings</li>
+              <li>Dedicated events enquiry channel</li>
+            </ul>
+            <div><a class="demo-btn light" href="wedding-landing.html">Explore Wedding & Events</a></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="demo-section">
+      <div class="container">
+        <div class="section-head center">
+          <div class="section-kicker">Guest experiences</div>
+          <h2>What our guests say</h2>
+          <p>Real feedback can help future guests understand what to expect from a visit.</p>
+        </div>
+        <div class="review-grid">
+          <article class="review"><div class="stars">★★★★★</div><p>“Excellent reception I am very happy with my experience. I like the friendly nature of CSR Landmark Resorts. Food quality is also very good.”</p><strong>Siva Sankar</strong></article>
+          <article class="review"><div class="stars">★★★★★</div><p>“Lovely peaceful place for enjoying. Swimming and activities were very good to enjoy. Service was done pleasantly.”</p><strong>Sai Vaisuram</strong></article>
+          <article class="review"><div class="stars">★★★★☆</div><p>“Excellent for relaxing in calm and peaceful place. Good for family or friends get together.”</p><strong>Kannan</strong></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="demo-section cream">
+      <div class="container">
+        <div class="section-head">
+          <div class="section-kicker">Plan your visit</div>
+          <h2>Helpful guides for your Coimbatore getaway</h2>
+          <p>Use the blog to discover resort experiences, day-out ideas and things to consider when planning a visit.</p>
+        </div>
+        <div class="blog-grid">
+          <article class="blog-card"><img src="img/blog-1-1.webp" width="900" height="550" alt="Bali-inspired resort experience in Coimbatore" loading="lazy"><div class="blog-body"><small>Experience</small><h3>Experience Bali in Coimbatore at CSR Landmark Resorts</h3><p>Explore a Bali-inspired resort experience surrounded by greenery and hills.</p><a class="card-link" href="bali-in-coimbatore.html">Read about Bali-inspired stays →</a></div></article>
+          <article class="blog-card"><img src="img/blog-3-4.webp" width="900" height="550" alt="Day out resort experience in Coimbatore" loading="lazy"><div class="blog-body"><small>Day Out</small><h3>Experience an Unforgettable Day Out in Coimbatore</h3><p>Explore ideas for planning a relaxed and activity-filled day out.</p><a class="card-link" href="dayout_resort_in_coimbatore.html">Read the Coimbatore day-out guide →</a></div></article>
+          <article class="blog-card"><img src="img/hero_home_1-1.webp" width="900" height="550" alt="Resort stay and event experience in Coimbatore" loading="lazy"><div class="blog-body"><small>Planning</small><h3>Choosing the right resort experience in Coimbatore</h3><p>Consider location, facilities, activities, accommodation and event needs before booking.</p><a class="card-link" href="blog.html">Explore all guides →</a></div></article>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="enquiry-section" id="enquiry">
+      <div class="container">
+        <div class="enquiry-card">
+          <div class="enquiry-intro">
+            <div class="section-kicker">Plan your visit</div>
+            <h2>Have a question? Let’s help you plan.</h2>
+            <p>Send a quick enquiry and the CSR Landmark Resorts team can help with your stay, day out, dining or event plans.</p>
+            <ul class="enquiry-points">
+              <li>Quick enquiry with only essential details</li>
+              <li>Ask about availability and current pricing</li>
+              <li>Choose the experience you are interested in</li>
+            </ul>
+          </div>
+
+          <div class="enquiry-form">
+            <form action="contacts.html" method="get">
+              <div class="form-grid">
+                <div class="form-field">
+                  <label for="enquiry-name">Name <span>*</span></label>
+                  <input id="enquiry-name" name="name" type="text" autocomplete="name" placeholder="Your name" required>
+                </div>
+
+                <div class="form-field">
+                  <label for="enquiry-phone">Mobile number <span>*</span></label>
+                  <input id="enquiry-phone" name="phone" type="tel" inputmode="tel" autocomplete="tel" placeholder="+91 98765 43210" pattern="[0-9+ ()-]{8,}" required>
+                </div>
+
+                <div class="form-field">
+                  <label for="enquiry-type">I'm interested in <span>*</span></label>
+                  <select id="enquiry-type" name="interest" required>
+                    <option value="" selected disabled>Select an option</option>
+                    <option value="stay">Stay / Rooms & Villas</option>
+                    <option value="day-out">Day Out</option>
+                    <option value="wedding-events">Wedding / Events</option>
+                    <option value="dining">Dining</option>
+                    <option value="general">General enquiry</option>
+                  </select>
+                </div>
+
+                <div class="form-field">
+                  <label for="enquiry-date">Preferred date <small>(optional)</small></label>
+                  <input id="enquiry-date" name="date" type="date">
+                </div>
+
+                <div class="form-field full">
+                  <label for="enquiry-email">Email <small>(optional)</small></label>
+                  <input id="enquiry-email" name="email" type="email" autocomplete="email" placeholder="you@example.com">
+                </div>
+
+                <div class="form-field full">
+                  <label for="enquiry-message">Message <small>(optional)</small></label>
+                  <textarea id="enquiry-message" name="message" placeholder="Tell us what you are planning..."></textarea>
+                </div>
+              </div>
+
+              <p class="form-note">* Required fields. Please avoid sharing sensitive personal or payment information.</p>
+              <button class="demo-btn form-submit" type="submit">Send Enquiry</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="demo-section">
+      <div class="container">
+        <div class="final-cta">
+          <div>
+            <div class="eyebrow" style="color:#e0bd80">Ready to plan?</div>
+            <h2>Choose your CSR experience.</h2>
+            <p>Check availability, ask about current pricing or speak with the relevant CSR team.</p>
+          </div>
+          <a class="demo-btn light" href="booking.html">Check Availability & Pricing</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="demo-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div><h4>CSR Landmark Resorts</h4><p>A French and Bali-inspired resort experience in Coimbatore, set within a 132-acre mango grove.</p></div>
+        <div><h4>Explore</h4><ul><li><a href="french-town.html">Rooms &amp; Suites</a></li><li><a href="dayout.html">Day Out</a></li><li><a href="banquet.html">Event Spaces</a></li><li><a href="restaurant.html">Restaurant</a></li></ul></div>
+        <div><h4>Discover</h4><ul><li><a href="activities.html">Activities</a></li><li><a href="image-gallery.html">Image Gallery</a></li><li><a href="blog.html">Blog</a></li><li><a href="contacts.html">Contact</a></li></ul></div>
+        <div><h4>Contact</h4><p>CSR Landmark Resorts,<br>First Street, Thenkarai Village,<br>Mathipalayam, Perur,<br>Coimbatore, Tamil Nadu - 641010.</p><p><a href="tel:+919585099992">+91 95850 99992</a><br><a href="mailto:gm@csrlandmarkresorts.com">gm@csrlandmarkresorts.com</a></p></div>
+      </div>
+      <div class="copyright">Demo homepage — created from the existing CSR homepage structure. This file does not replace the live website.</div>
+    </div>
+  </footer>
+
+  <div class="mobile-cta">
+    <a href="tel:+919585099992">📞 Call</a>
+    <a href="https://api.whatsapp.com/send?phone=919585099110&text=Dear%20CSR%20Landmark%20Resorts%20I%20want%20to%20book%20Room,%20Please%20provide%20more%20information." target="_blank" rel="noopener">💬 WhatsApp</a>
+    <a href="booking.html">📅 Check Availability</a>
+  </div>
+</div>
+
+
+
+
+<script>
+(function(){
+  const play=document.getElementById('videoPlayButton');
+  const video=document.getElementById('resortVideo');
+  if(play&&video){
+    play.addEventListener('click',function(){
+      const iframe=document.createElement('iframe');
+      iframe.className='video-iframe';
+      iframe.src='https://www.youtube.com/embed/Vkn-rdiqUxI?si=7JPZlg-ak-eyU4lV&autoplay=1&rel=0';
+      iframe.title='YouTube video player';
+      iframe.width='560';
+      iframe.height='315';
+      iframe.loading='lazy';
+      iframe.referrerPolicy='strict-origin-when-cross-origin';
+      iframe.allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share';
+      iframe.allowFullscreen=true;
+      video.innerHTML='';
+      video.appendChild(iframe);
+    });
+  }
+})();
+</script>
+
+<script>
+(function(){
+  const button=document.getElementById('demoMenuButton');
+  const nav=document.getElementById('demoMobileNav');
+  if(!button||!nav)return;
+  button.addEventListener('click',function(){
+    const open=nav.classList.toggle('is-open');
+    button.setAttribute('aria-expanded',String(open));
+  });
+})();
+</script>
+</body>
+</html>

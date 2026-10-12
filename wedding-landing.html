@@ -1,0 +1,1557 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CSR Landmark Resorts | Premier Wedding Venue in Coimbatore</title>
+  <meta name="description" content="Destination wedding venue in Coimbatore — outdoor lawns, Grande Amalfi Garden, French Lawn, Roman Courtyard & Banquet Hall at CSR Landmark Resorts. 30 min from city centre, 20 min from Isha." />
+  <meta name="keywords" content="wedding venue in Coimbatore, luxury wedding resorts in Coimbatore, outdoor wedding venues Coimbatore, destination wedding Coimbatore, best wedding hall Coimbatore" />
+  <meta property="og:title" content="CSR Landmark Resorts | Premium Wedding Venue in Coimbatore" />
+  <meta property="og:description" content="Where nature meets elegance. Plan your dream wedding at CSR Landmark Resorts — Coimbatore's finest outdoor and banquet wedding destination." />
+  <meta property="og:type" content="website" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Jost:wght@200;300;400;500&family=Cinzel:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      /* ═══════════════════════════════════════════════════
+         OFFICIAL CSR LANDMARK RESORTS BRAND COLORS
+         Source: csrlandmarkresorts.com + logo pixel analysis
+         ═══════════════════════════════════════════════════ */
+      --gold: #D9BE8C;          /* PRIMARY BRAND GOLD — median of all logo gold pixels */
+      --gold-light: #E0C897;    /* LIGHT GOLD — 75th percentile highlights in logo */
+      --gold-bright: #E8D4A8;   /* PALE HIGHLIGHT — bright leaf tips in logo */
+      --gold-deep: #D2B985;     /* DEEP GOLD — 25th percentile, shadow tones in logo */
+      --gold-darker: #B8995E;   /* DARK ACCENT GOLD — for hover states */
+      --gold-pale: #EDF7F4;      /* GREEN-PALE — light bg tint */     /* NEAR-WHITE GOLD TINT — subtle bg wash */
+      
+      --black: #1c443c;          /* PRIMARY BRAND GREEN — csrlandmarkresorts.com */
+      --black-rich: #132e29;    /* DEEP BRAND GREEN — darker variant */
+      --charcoal: #0e2420;      /* DARKEST GREEN — for deep section backgrounds */
+      --dark: #1c443c;          /* BRAND GREEN — alternating dark sections */
+      
+      --ivory: #F4FAF8;         /* LIGHT BG — cool mint white against brand green */
+      --ivory-warm: #EBF5F2;    /* GREEN-TINTED IVORY — harmonises with brand green */
+      --white: #FFFFFF;
+      
+      --text-mid: #2a5e52;      /* BODY TEXT ON LIGHT — mid green, on-brand */
+      --text-light: #6a9e91;    /* SECONDARY TEXT — muted teal, on-brand */
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'Jost', sans-serif;
+      background: var(--ivory);
+      color: var(--charcoal);
+      overflow-x: hidden;
+    }
+
+    /* ── STICKY NAV ── */
+    nav {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 1000;
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 18px 60px;
+      background: rgba(28,68,60,0.95);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid rgba(217,190,140,0.25);
+      transition: padding 0.3s;
+    }
+    .nav-logo { display: flex; align-items: center; gap: 14px; }
+    .nav-logo img { width: 100px !important; height: 100px !important; max-width: 100px !important; max-height: 100px !important; object-fit: contain !important; aspect-ratio: 1 / 1 !important; border-radius: 50% !important; border: none !important; border: none !important; }
+    .nav-logo-text { font-family: 'Cinzel', serif; color: var(--gold); font-size: 0.72rem; letter-spacing: 0.18em; line-height: 1.5; }
+    .nav-links { display: flex; gap: 36px; list-style: none; }
+    .nav-links a { font-family: 'Jost', sans-serif; font-weight: 300; font-size: 0.8rem; letter-spacing: 0.14em; color: rgba(255,255,255,0.75); text-decoration: none; text-transform: uppercase; transition: color 0.2s; }
+    .nav-links a:hover { color: var(--gold-light); }
+    .nav-cta {
+      font-family: 'Jost', sans-serif; font-weight: 400; font-size: 0.75rem;
+      letter-spacing: 0.18em; text-transform: uppercase;
+      padding: 10px 26px; border: 1px solid var(--gold);
+      color: var(--gold); background: transparent;
+      cursor: pointer; transition: all 0.25s; text-decoration: none;
+    }
+    .nav-cta:hover { background: var(--gold); color: var(--black); }
+
+    /* ── HERO ── */
+    #hero {
+      position: relative; height: 100vh; min-height: 700px;
+      display: flex; flex-direction: column;
+      align-items: center; justify-content: center;
+      text-align: center; overflow: hidden;
+      background: var(--black-rich);
+    }
+    .hero-bg {
+      position: absolute; inset: 0;
+      background: url('img/wedding-landing/wl-01-bb2c86fd74.webp') center center / cover no-repeat;
+    }
+    .hero-bg::after {
+      content: '';
+      position: absolute; inset: 0;
+      background: linear-gradient(180deg, rgba(14,36,32,0.78) 0%, rgba(28,68,60,0.60) 50%, rgba(14,36,32,0.88) 100%);
+    }
+    .hero-pattern {
+      position: absolute; inset: 0; opacity: 0.04;
+      background-image: repeating-linear-gradient(
+        45deg, var(--gold) 0, var(--gold) 1px, transparent 0, transparent 50%
+      );
+      background-size: 30px 30px;
+    }
+    .hero-ornament {
+      position: absolute; width: 600px; height: 600px;
+      border: 1px solid rgba(217,190,140,0.12);
+      border-radius: 50%; top: 50%; left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    .hero-ornament::before {
+      content: ''; position: absolute; inset: 30px;
+      border: 1px solid rgba(217,190,140,0.08); border-radius: 50%;
+    }
+    .hero-content { position: relative; z-index: 3; max-width: 860px; padding: 0 30px; }
+    .hero-eyebrow {
+      font-family: 'Jost', sans-serif; font-weight: 300;
+      font-size: 0.72rem; letter-spacing: 0.3em; text-transform: uppercase;
+      color: var(--gold); margin-bottom: 28px;
+      animation: fadeUp 1s ease both;
+    }
+    .hero-eyebrow span { display: inline-block; width: 40px; height: 1px; background: var(--gold); vertical-align: middle; margin: 0 14px; }
+    .hero-headline {
+      font-family: 'Cormorant Garamond', serif; font-weight: 300;
+      font-size: clamp(3rem, 6vw, 5.5rem); line-height: 1.1;
+      color: var(--white); margin-bottom: 24px;
+      animation: fadeUp 1s 0.2s ease both;
+    }
+    .hero-headline em { font-style: italic; color: var(--gold-light); }
+    .hero-sub {
+      font-family: 'Jost', sans-serif; font-weight: 200;
+      font-size: clamp(0.95rem, 1.8vw, 1.15rem); line-height: 1.8;
+      color: rgba(255,255,255,0.6); margin-bottom: 48px; letter-spacing: 0.04em;
+      animation: fadeUp 1s 0.4s ease both;
+    }
+    .hero-actions {
+      display: flex; gap: 18px; justify-content: center; flex-wrap: wrap;
+      animation: fadeUp 1s 0.6s ease both;
+    }
+    .btn-primary {
+      font-family: 'Jost', sans-serif; font-weight: 400; font-size: 0.8rem;
+      letter-spacing: 0.22em; text-transform: uppercase;
+      padding: 16px 42px; background: var(--gold); color: var(--black);
+      border: none; cursor: pointer; transition: all 0.3s; text-decoration: none; display: inline-block;
+    }
+    .btn-primary:hover { background: var(--gold-light); transform: translateY(-2px); box-shadow: 0 12px 40px rgba(217,190,140,0.3); }
+    .btn-secondary {
+      font-family: 'Jost', sans-serif; font-weight: 300; font-size: 0.8rem;
+      letter-spacing: 0.22em; text-transform: uppercase;
+      padding: 16px 42px; background: transparent; color: rgba(255,255,255,0.8);
+      border: 1px solid rgba(255,255,255,0.3); cursor: pointer; transition: all 0.3s; text-decoration: none; display: inline-block;
+    }
+    .btn-secondary:hover { border-color: var(--gold); color: var(--gold); }
+    .hero-scroll {
+      position: absolute; bottom: 40px; left: 50%; transform: translateX(-50%);
+      display: flex; flex-direction: column; align-items: center; gap: 8px;
+      color: rgba(255,255,255,0.3); font-size: 0.65rem; letter-spacing: 0.2em;
+      text-transform: uppercase; animation: fadeUp 1s 1s ease both;
+    }
+    .scroll-line { width: 1px; height: 50px; background: linear-gradient(to bottom, rgba(217,190,140,0.6), transparent); animation: scrollPulse 2s infinite; }
+
+    /* ── TRUST BAR ── */
+    #trust {
+      background: #0e2420;
+      position: relative;
+      border-top: 1px solid rgba(217,190,140,0.2);
+      border-bottom: 1px solid rgba(217,190,140,0.2);
+      padding: 22px 60px;
+      display: flex; align-items: center; justify-content: center; gap: 60px; flex-wrap: wrap;
+    }
+    .trust-item { display: flex; align-items: center; gap: 12px; }
+    .trust-item .ti-num { font-family: 'Cormorant Garamond', serif; font-size: 1.8rem; font-weight: 300; color: var(--gold); }
+    .trust-item .ti-label { font-family: 'Jost', sans-serif; font-size: 0.7rem; font-weight: 300; letter-spacing: 0.15em; text-transform: uppercase; color: rgba(255,255,255,0.5); line-height: 1.4; }
+    .trust-divider { width: 1px; height: 40px; background: rgba(217,190,140,0.2); }
+
+    /* ── SECTION COMMONS ── */
+    section { padding: 100px 60px; }
+    .section-eyebrow {
+      font-family: 'Jost', sans-serif; font-weight: 300; font-size: 0.68rem;
+      letter-spacing: 0.32em; text-transform: uppercase; color: var(--gold);
+      margin-bottom: 16px; display: flex; align-items: center; gap: 16px;
+    }
+    .section-eyebrow::after { content: ''; flex: 0 0 50px; height: 1px; background: var(--gold); opacity: 0.5; }
+    .section-title {
+      font-family: 'Cormorant Garamond', serif; font-weight: 300;
+      font-size: clamp(2.2rem, 4vw, 3.5rem); line-height: 1.15; color: var(--charcoal);
+      margin-bottom: 20px;
+    }
+    .section-title em { font-style: italic; color: var(--gold); }
+    .section-subtitle {
+      font-family: 'Jost', sans-serif; font-weight: 300; font-size: 1rem;
+      color: var(--text-mid); line-height: 1.9; max-width: 560px;
+    }
+    .center { text-align: center; position: relative; z-index: 1; }
+    .center .section-eyebrow { justify-content: center; }
+    .center .section-eyebrow::after { display: none; }
+    .center .section-subtitle { margin: 0 auto; }
+
+    /* ── WHY CHOOSE US ── */
+    #why {
+      background: var(--ivory-warm);
+      position: relative;
+    }
+    #why::before {
+      content: ''; position: absolute; top: 0; right: 0;
+      width: 300px; height: 300px;
+      background: radial-gradient(ellipse, rgba(217,190,140,0.08) 0%, transparent 70%);
+    }
+    .why-grid {
+      display: grid; grid-template-columns: repeat(3, 1fr); gap: 2px;
+      margin-top: 64px; border: 1px solid rgba(217,190,140,0.2);
+    }
+    .why-card {
+      background: var(--white); padding: 48px 36px;
+      border-right: 1px solid rgba(217,190,140,0.15);
+      border-bottom: 1px solid rgba(217,190,140,0.15);
+      transition: background 0.3s;
+      position: relative; overflow: hidden;
+    }
+    .why-card::before {
+      content: ''; position: absolute; top: 0; left: 0; right: 0; height: 2px;
+      background: var(--gold); transform: scaleX(0); transform-origin: left;
+      transition: transform 0.4s;
+    }
+    .why-card:hover { background: var(--ivory); }
+    .why-card:hover::before { transform: scaleX(1); }
+    .why-icon {
+      width: 52px; height: 52px; margin-bottom: 24px;
+      display: flex; align-items: center; justify-content: center;
+      border: 1px solid rgba(217,190,140,0.3); color: var(--gold); font-size: 1.4rem;
+    }
+    .why-card h3 {
+      font-family: 'Cormorant Garamond', serif; font-weight: 500; font-size: 1.35rem;
+      color: var(--charcoal); margin-bottom: 12px;
+    }
+    .why-card p {
+      font-family: 'Jost', sans-serif; font-weight: 300; font-size: 0.9rem;
+      color: var(--text-mid); line-height: 1.8;
+    }
+
+    /* ── VENUES ── */
+    #venues { background: var(--black-rich); }
+    #venues .section-title { color: var(--white); }
+    #venues .section-subtitle { color: rgba(255,255,255,0.5); }
+    .venue-tabs {
+      display: flex; flex-wrap: wrap; gap: 8px 4px; margin: 48px 0 0; border-bottom: 1px solid rgba(217,190,140,0.2);
+    }
+    .vtab {
+      padding: 14px 30px; font-family: 'Jost', sans-serif; font-size: 0.78rem;
+      font-weight: 300; letter-spacing: 0.14em; text-transform: uppercase;
+      color: rgba(255,255,255,0.4); cursor: pointer; border: none; background: none;
+      border-bottom: 2px solid transparent; margin-bottom: -1px; transition: all 0.25s;
+    }
+    .vtab.active, .vtab:hover { color: var(--gold); border-bottom-color: var(--gold); }
+    .venue-panels { margin-top: 0; }
+    .vpanel { display: none; }
+    .vpanel.active { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; padding-top: 56px; align-items: center; }
+    .vpanel-visual {
+      aspect-ratio: 4/3; background: var(--charcoal);
+      border: 1px solid rgba(217,190,140,0.15);
+      display: flex; align-items: center; justify-content: center;
+      position: relative; overflow: hidden;
+    }
+    .vpanel-visual-inner {
+      width: 100%; height: 100%; display: flex; align-items: center; justify-content: center;
+      font-family: 'Cormorant Garamond', serif; font-size: 1.2rem;
+      color: rgba(217,190,140,0.3); text-align: center; padding: 20px;
+    }
+    .vpanel-visual::after {
+      content: ''; position: absolute; inset: 0;
+      background: linear-gradient(135deg, rgba(217,190,140,0.05) 0%, transparent 60%);
+    }
+    /* Venue imagery placeholders with elegant patterns */
+    .venue-outdoor { background: linear-gradient(135deg, #0e2420 0%, #1c443c 40%, #0e2420 100%); }
+    .venue-banquet { background: linear-gradient(135deg, #0e2420 0%, #1c443c 40%, #0e2420 100%); }
+    .venue-prewed { background: linear-gradient(135deg, #0e2420 0%, #1c443c 40%, #0e2420 100%); }
+    .venue-pattern {
+      position: absolute; inset: 0; opacity: 0.06;
+      background-image: repeating-linear-gradient(
+        0deg, var(--gold) 0, var(--gold) 1px, transparent 0, transparent 40px
+      ), repeating-linear-gradient(
+        90deg, var(--gold) 0, var(--gold) 1px, transparent 0, transparent 40px
+      );
+    }
+    .vpanel-content h3 {
+      font-family: 'Cormorant Garamond', serif; font-weight: 300; font-size: 2rem;
+      color: var(--white); margin-bottom: 20px;
+    }
+    .vpanel-content p {
+      font-family: 'Jost', sans-serif; font-weight: 300; font-size: 0.95rem;
+      color: rgba(255,255,255,0.55); line-height: 1.9; margin-bottom: 32px;
+    }
+    .venue-specs {
+      display: flex; flex-direction: column; gap: 10px; margin-bottom: 36px;
+    }
+    .vspec {
+      display: flex; align-items: center; gap: 14px;
+      font-family: 'Jost', sans-serif; font-size: 0.82rem; font-weight: 300;
+      color: rgba(255,255,255,0.5);
+    }
+    .vspec-dot { width: 5px; height: 5px; background: var(--gold); flex-shrink: 0; }
+
+    /* ── GALLERY ── */
+    #gallery { background: var(--ivory); padding: 100px 60px; }
+    .gallery-intro { display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 48px; }
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      grid-template-rows: repeat(2, 240px);
+      gap: 8px;
+    }
+    .gitem {
+      background: var(--charcoal); overflow: hidden; position: relative;
+      display: flex; align-items: flex-end; padding: 20px;
+      cursor: pointer; min-height: 240px;
+    }
+    .gitem img { transition: transform 0.6s ease; }
+    .gitem:hover img { transform: scale(1.06); }
+    .gitem:nth-child(1) { grid-column: span 5; grid-row: span 2; }
+    .gitem:nth-child(2) { grid-column: span 4; }
+    .gitem:nth-child(3) { grid-column: span 3; }
+    .gitem:nth-child(4) { grid-column: span 3; }
+    .gitem:nth-child(5) { grid-column: span 4; }
+    .gitem-bg {
+      position: absolute; inset: 0;
+      transition: transform 0.6s ease;
+    }
+    .gitem:hover .gitem-bg { transform: scale(1.05); }
+    .g1 { background: linear-gradient(135deg, #0f2e28, #225550); }
+    .g2 { background: linear-gradient(135deg, #0e2420, #1c443c); }
+    .g3 { background: linear-gradient(135deg, #0e2420, #1c443c); }
+    .g4 { background: linear-gradient(135deg, #0e2420, #1c443c); }
+    .g5 { background: linear-gradient(135deg, #0f2e28, #1c443c); }
+    .gitem-pattern {
+      position: absolute; inset: 0; opacity: 0.08;
+      background-image: radial-gradient(circle at 30% 40%, var(--gold) 0, transparent 50%);
+    }
+    .gitem-caption {
+      position: relative; z-index: 2; font-family: 'Cormorant Garamond', serif;
+      font-size: 0.9rem; font-weight: 300; color: rgba(255,255,255,0.7);
+      font-style: italic;
+    }
+    .gitem-tag {
+      position: absolute; top: 16px; left: 16px; z-index: 2;
+      font-family: 'Jost', sans-serif; font-size: 0.6rem; letter-spacing: 0.2em;
+      text-transform: uppercase; color: var(--gold);
+      border: 1px solid rgba(217,190,140,0.4); padding: 4px 10px;
+    }
+    .gallery-icon {
+      width: 100%; height: 100%; display: flex; flex-direction: column;
+      align-items: center; justify-content: center; gap: 10px;
+      color: rgba(217,190,140,0.25); font-family: 'Cormorant Garamond', serif;
+      font-size: 0.85rem; font-style: italic;
+    }
+    .gallery-icon svg { opacity: 0.25; }
+
+    /* ── TESTIMONIALS ── */
+    #testimonials { background: var(--ivory-warm); }
+    .testi-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; margin-top: 56px; }
+    .tcard {
+      background: var(--white); padding: 40px 36px;
+      border: 1px solid rgba(217,190,140,0.15);
+      position: relative;
+    }
+    .tcard::before {
+      content: '\201C'; position: absolute; top: 24px; right: 28px;
+      font-family: 'Cormorant Garamond', serif; font-size: 5rem; line-height: 1;
+      color: rgba(217,190,140,0.12); font-weight: 300;
+    }
+    .tcard-stars { color: var(--gold); font-size: 0.75rem; letter-spacing: 3px; margin-bottom: 18px; }
+    .tcard p {
+      font-family: 'Cormorant Garamond', serif; font-size: 1.1rem; font-style: italic;
+      font-weight: 300; line-height: 1.8; color: var(--text-mid); margin-bottom: 24px;
+    }
+    .tcard-author {
+      display: flex; align-items: center; gap: 14px;
+      padding-top: 20px; border-top: 1px solid rgba(217,190,140,0.15);
+    }
+    .tcard-avatar {
+      width: 44px; height: 44px; border-radius: 50%;
+      background: linear-gradient(135deg, var(--gold), var(--gold-light));
+      display: flex; align-items: center; justify-content: center;
+      font-family: 'Cormorant Garamond', serif; font-size: 1.1rem; color: var(--black); font-weight: 500;
+    }
+    .tcard-name { font-family: 'Jost', sans-serif; font-weight: 400; font-size: 0.85rem; color: var(--charcoal); }
+    .tcard-detail { font-family: 'Jost', sans-serif; font-weight: 300; font-size: 0.72rem; color: var(--text-light); letter-spacing: 0.08em; }
+    .tcard.featured { grid-column: span 1; background: var(--black-rich); border-color: rgba(217,190,140,0.3); }
+    .tcard.featured p { color: rgba(255,255,255,0.65); }
+    .tcard.featured .tcard-name { color: var(--white); }
+
+    /* ── PACKAGES ── */
+    #packages { background: var(--black-rich); }
+    #packages .section-title { color: var(--white); }
+    #packages .section-subtitle { color: rgba(255,255,255,0.5); }
+    .pkg-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px; background: rgba(217,190,140,0.15); margin-top: 60px; }
+    .pkg-card {
+      background: var(--black-rich); padding: 52px 40px;
+      border-top: 3px solid transparent; transition: all 0.3s;
+    }
+    .pkg-card.highlight { border-top-color: var(--gold); background: #1c443c; }
+    .pkg-badge {
+      font-family: 'Jost', sans-serif; font-size: 0.62rem; letter-spacing: 0.24em;
+      text-transform: uppercase; color: var(--gold); margin-bottom: 24px; display: block;
+    }
+    .pkg-card h3 {
+      font-family: 'Cormorant Garamond', serif; font-size: 1.8rem; font-weight: 300;
+      color: var(--white); margin-bottom: 16px;
+    }
+    .pkg-card p {
+      font-family: 'Jost', sans-serif; font-size: 0.88rem; font-weight: 300;
+      color: rgba(255,255,255,0.45); line-height: 1.9; margin-bottom: 32px;
+    }
+    .pkg-features { list-style: none; display: flex; flex-direction: column; gap: 10px; }
+    .pkg-features li {
+      font-family: 'Jost', sans-serif; font-size: 0.82rem; font-weight: 300;
+      color: rgba(255,255,255,0.55); display: flex; align-items: center; gap: 12px;
+    }
+    .pkg-features li::before { content: '—'; color: var(--gold); flex-shrink: 0; }
+
+    /* ── CTA SECTION ── */
+    #cta {
+      background: var(--ivory-warm);
+      position: relative; overflow: hidden;
+    }
+    #cta::before {
+      content: ''; position: absolute; top: -100px; right: -100px;
+      width: 500px; height: 500px;
+      border: 1px solid rgba(217,190,140,0.1); border-radius: 50%;
+    }
+    .cta-inner { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: start; }
+    .cta-content .section-title { font-size: 2.8rem; }
+    .cta-content p {
+      font-family: 'Jost', sans-serif; font-size: 0.95rem; font-weight: 300;
+      color: var(--text-mid); line-height: 1.9; margin: 24px 0 32px;
+    }
+    .cta-urgency {
+      display: flex; align-items: center; gap: 10px;
+      font-family: 'Jost', sans-serif; font-size: 0.78rem; font-weight: 400;
+      color: var(--gold); letter-spacing: 0.06em;
+    }
+    .urgency-dot { width: 8px; height: 8px; background: var(--gold); border-radius: 50%; animation: pulse 1.5s infinite; }
+    .cta-form { background: var(--white); padding: 44px; border: 1px solid rgba(217,190,140,0.2); }
+    .form-title {
+      font-family: 'Cormorant Garamond', serif; font-size: 1.5rem; font-weight: 300;
+      color: var(--charcoal); margin-bottom: 28px; padding-bottom: 20px;
+      border-bottom: 1px solid rgba(217,190,140,0.2);
+    }
+    .form-group { margin-bottom: 20px; }
+    .form-group label {
+      display: block; font-family: 'Jost', sans-serif; font-size: 0.68rem;
+      font-weight: 400; letter-spacing: 0.14em; text-transform: uppercase;
+      color: var(--text-mid); margin-bottom: 8px;
+    }
+    .form-group input, .form-group select {
+      width: 100%; padding: 14px 16px;
+      border: 1px solid rgba(217,190,140,0.25); background: var(--ivory);
+      font-family: 'Jost', sans-serif; font-size: 0.9rem; font-weight: 300;
+      color: var(--charcoal); outline: none; transition: border-color 0.2s;
+      appearance: none;
+    }
+    .form-group input:focus, .form-group select:focus { border-color: var(--gold); }
+    .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+    .btn-form {
+      width: 100%; padding: 18px; background: var(--black);
+      font-family: 'Jost', sans-serif; font-size: 0.8rem; font-weight: 400;
+      letter-spacing: 0.2em; text-transform: uppercase; color: var(--gold);
+      border: 1px solid var(--black); cursor: pointer; transition: all 0.3s;
+      margin-top: 8px;
+    }
+    .btn-form:hover { background: var(--gold); color: var(--black); border-color: var(--gold); }
+    .form-note {
+      text-align: center; margin-top: 12px;
+      font-family: 'Jost', sans-serif; font-size: 0.72rem; font-weight: 300;
+      color: var(--text-light);
+    }
+
+    /* ── LOCATION ── */
+    #location { background: var(--black-rich); }
+    #location .section-title { color: var(--white); }
+    .loc-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; margin-top: 56px; align-items: start; }
+    .loc-benefits { display: flex; flex-direction: column; gap: 28px; }
+    .loc-item {
+      display: flex; gap: 20px;
+    }
+    .loc-num {
+      font-family: 'Cormorant Garamond', serif; font-size: 2rem; font-weight: 300;
+      color: rgba(217,190,140,0.3); line-height: 1; flex-shrink: 0; width: 36px;
+    }
+    .loc-item h4 {
+      font-family: 'Cormorant Garamond', serif; font-size: 1.2rem; color: var(--white);
+      margin-bottom: 6px;
+    }
+    .loc-item p {
+      font-family: 'Jost', sans-serif; font-size: 0.85rem; font-weight: 300;
+      color: rgba(255,255,255,0.45); line-height: 1.8;
+    }
+    .loc-map {
+      aspect-ratio: 1; background: var(--charcoal);
+      border: 1px solid rgba(217,190,140,0.15);
+      display: flex; flex-direction: column; align-items: center; justify-content: center;
+      gap: 16px; position: relative; overflow: hidden;
+    }
+    .loc-map > img { position:absolute; inset:0; width:100%; height:100%; object-fit:cover; opacity:0.6; }
+    .loc-map > *:not(img) { position: relative; z-index: 2; }
+    .loc-map-pattern {
+      position: absolute; inset: 0; opacity: 0.05;
+      background-image:
+        linear-gradient(rgba(217,190,140,0.5) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(217,190,140,0.5) 1px, transparent 1px);
+      background-size: 40px 40px;
+    }
+    .loc-map-pin {
+      font-family: 'Cormorant Garamond', serif; font-size: 1rem; color: var(--gold);
+      text-align: center; position: relative; z-index: 1;
+    }
+    .loc-map-pin svg { display: block; margin: 0 auto 10px; }
+    .map-embed-note {
+      font-family: 'Jost', sans-serif; font-size: 0.72rem; font-weight: 300;
+      color: rgba(217,190,140,0.5); letter-spacing: 0.1em; text-align: center;
+      position: relative; z-index: 1;
+    }
+    .loc-address {
+      margin-top: 24px; padding: 20px 24px;
+      border: 1px solid rgba(217,190,140,0.2); position: relative; z-index: 1; width: 80%;
+    }
+    .loc-address p {
+      font-family: 'Jost', sans-serif; font-size: 0.8rem; font-weight: 300;
+      color: rgba(255,255,255,0.55); text-align: center; line-height: 1.7;
+    }
+
+    /* ── FAQ ── */
+    #faq { background: var(--ivory); padding: 80px 0; }
+    .faq-list { 
+      max-width: 800px; 
+      margin: 56px auto 0; 
+      display: flex; 
+      flex-direction: column;
+      position: relative;
+      z-index: 1;
+    }
+    .faq-item { border-bottom: 1px solid rgba(217,190,140,0.2); }
+    .faq-q {
+      width: 100%; padding: 24px 0; display: flex; align-items: center; justify-content: space-between;
+      background: none; border: none; cursor: pointer; text-align: left;
+      transition: all 0.3s ease;
+    }
+    .faq-q:hover {
+      padding-left: 8px;
+    }
+    .faq-q:hover span {
+      color: var(--gold);
+    }
+    .faq-q:hover .faq-icon {
+      background: var(--gold);
+      color: var(--black);
+      border-color: var(--gold);
+    }
+    .faq-q span {
+      font-family: 'Cormorant Garamond', serif; font-size: 1.15rem; font-weight: 400;
+      color: var(--charcoal); line-height: 1.4;
+      transition: color 0.3s ease;
+    }
+    .faq-icon {
+      width: 28px; height: 28px; border: 1px solid rgba(217,190,140,0.4);
+      display: flex; align-items: center; justify-content: center;
+      color: var(--gold); font-size: 1rem; flex-shrink: 0; transition: all 0.3s;
+    }
+    .faq-item.open .faq-icon { 
+      background: var(--gold); 
+      color: var(--black); 
+      transform: rotate(45deg); 
+    }
+    .faq-a {
+      max-height: 0; 
+      overflow: hidden; 
+      transition: max-height 0.6s ease-out;
+      display: block;
+      opacity: 1;
+    }
+    .faq-item.open .faq-a { 
+      max-height: 2000px;
+      overflow: visible;
+    }
+    .faq-a p {
+      font-family: 'Jost', sans-serif; font-size: 0.9rem; font-weight: 300;
+      color: var(--text-mid); line-height: 1.9; 
+      padding: 16px 0 24px 0;
+      margin: 0;
+    }
+    .faq-q:focus-visible {
+      outline: 2px solid var(--gold); outline-offset: 4px;
+    }
+
+    /* ── FOOTER ── */
+    footer {
+      background: #0e2420; border-top: 1px solid rgba(217,190,140,0.15);
+      padding: 70px 60px 40px;
+    }
+    .footer-top {
+      display: grid; grid-template-columns: 1.5fr 1fr 1fr 1fr; gap: 60px;
+      padding-bottom: 50px; border-bottom: 1px solid rgba(217,190,140,0.1);
+    }
+    .footer-brand { }
+    .footer-logo { display: flex; align-items: center; gap: 14px; margin-bottom: 20px; }
+    .footer-logo img { width: 100px !important; height: 100px !important; max-width: 100px !important; max-height: 100px !important; object-fit: contain !important; aspect-ratio: 1 / 1 !important; }
+    .footer-brand p {
+      font-family: 'Jost', sans-serif; font-size: 0.85rem; font-weight: 300;
+      color: rgba(255,255,255,0.35); line-height: 1.9; max-width: 260px;
+    }
+    .footer-socials { display: flex; gap: 12px; margin-top: 24px; }
+    .social-btn {
+      width: 36px; height: 36px; border: 1px solid rgba(217,190,140,0.25);
+      display: flex; align-items: center; justify-content: center;
+      color: rgba(217,190,140,0.6); font-size: 0.75rem; transition: all 0.2s;
+      text-decoration: none;
+    }
+    .social-btn:hover { border-color: var(--gold); color: var(--gold); }
+    .footer-col h4 {
+      font-family: 'Jost', sans-serif; font-size: 0.7rem; font-weight: 400;
+      letter-spacing: 0.2em; text-transform: uppercase; color: var(--gold);
+      margin-bottom: 20px;
+    }
+    .footer-links { list-style: none; display: flex; flex-direction: column; gap: 10px; }
+    .footer-links a {
+      font-family: 'Jost', sans-serif; font-size: 0.83rem; font-weight: 300;
+      color: rgba(255,255,255,0.4); text-decoration: none; transition: color 0.2s;
+    }
+    .footer-links a:hover { color: var(--gold-light); }
+    .footer-contact { display: flex; flex-direction: column; gap: 12px; }
+    .fcontact {
+      font-family: 'Jost', sans-serif; font-size: 0.83rem; font-weight: 300;
+      color: rgba(255,255,255,0.4); line-height: 1.6;
+    }
+    .fcontact a { color: rgba(255,255,255,0.55); text-decoration: none; }
+    .footer-bottom {
+      display: flex; justify-content: space-between; align-items: center;
+      padding-top: 28px; flex-wrap: wrap; gap: 16px;
+    }
+    .footer-bottom p {
+      font-family: 'Jost', sans-serif; font-size: 0.72rem; font-weight: 300;
+      color: rgba(255,255,255,0.2); letter-spacing: 0.06em;
+    }
+    .footer-meta {
+      font-family: 'Jost', sans-serif; font-size: 0.7rem; font-weight: 300;
+      color: rgba(217,190,140,0.4); letter-spacing: 0.1em;
+    }
+
+    /* ── STICKY CTA ── */
+    .sticky-cta {
+      position: fixed; bottom: 30px; right: 30px; z-index: 999;
+      display: flex; flex-direction: column; gap: 10px; align-items: flex-end;
+    }
+    .sticky-btn {
+      padding: 14px 28px; background: var(--gold); color: var(--black);
+      font-family: 'Jost', sans-serif; font-size: 0.75rem; font-weight: 500;
+      letter-spacing: 0.18em; text-transform: uppercase; border: none; cursor: pointer;
+      box-shadow: 0 8px 32px rgba(14,36,32,0.4); transition: all 0.3s; text-decoration: none;
+      display: block; text-align: center;
+    }
+    .sticky-btn:hover { background: var(--gold-light); transform: translateY(-2px); }
+    .sticky-call {
+      padding: 12px 24px; background: var(--black); color: var(--gold);
+      font-family: 'Jost', sans-serif; font-size: 0.72rem; font-weight: 300;
+      letter-spacing: 0.14em; text-transform: uppercase; border: 1px solid rgba(217,190,140,0.4);
+      box-shadow: 0 8px 32px rgba(14,36,32,0.4); text-decoration: none;
+      display: block; text-align: center; transition: all 0.3s;
+    }
+    .sticky-call:hover { border-color: var(--gold); background: rgba(217,190,140,0.08); }
+
+    /* ── ANIMATIONS ── */
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes scrollPulse {
+      0%, 100% { opacity: 0.3; transform: scaleY(1); }
+      50% { opacity: 1; transform: scaleY(1.2); }
+    }
+    @keyframes pulse {
+      0%, 100% { opacity: 1; transform: scale(1); }
+      50% { opacity: 0.5; transform: scale(0.8); }
+    }
+
+    /* ── REVEAL ── */
+    .reveal { opacity: 0; transform: translateY(40px); transition: opacity 0.7s ease, transform 0.7s ease; }
+    .reveal.visible { opacity: 1; transform: none; }
+
+    /* ── MOBILE ── */
+    @media (max-width: 900px) {
+      nav { padding: 14px 24px; }
+      .nav-links { display: none; }
+      section { padding: 70px 24px; }
+      #trust { padding: 18px 24px; gap: 24px; }
+      .why-grid { grid-template-columns: 1fr 1fr; }
+      .vpanel.active { grid-template-columns: 1fr; }
+      .gallery-grid { grid-template-columns: 1fr 1fr; grid-template-rows: auto; }
+      .gitem { grid-column: span 1 !important; grid-row: span 1 !important; aspect-ratio: 4/3; }
+      .testi-grid { grid-template-columns: 1fr; }
+      .cta-inner { grid-template-columns: 1fr; gap: 40px; }
+      .loc-grid { grid-template-columns: 1fr; gap: 40px; }
+      .pkg-grid { grid-template-columns: 1fr; }
+      .footer-top { grid-template-columns: 1fr; gap: 36px; }
+      .gallery-intro { flex-direction: column; gap: 20px; align-items: flex-start; }
+      .hero-ornament { width: 300px; height: 300px; }
+      .sticky-cta { bottom: 20px; right: 16px; }
+      .form-row { grid-template-columns: 1fr; }
+      .wl-why-photos {
+        grid-template-columns: 1fr !important;
+        height: auto !important;
+      }
+      .wl-why-photos .wl-ph {
+        min-height: 260px;
+      }
+    }
+
+    /* Two equal venue photos side by side */
+    .wl-why-photos {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 8px;
+      margin-top: 48px;
+      margin-bottom: 8px;
+      height: min(48vw, 420px);
+      min-height: 280px;
+    }
+    .wl-why-photos .wl-ph {
+      overflow: hidden;
+      border-radius: 2px;
+      background: #0E2420;
+      min-height: 0;
+    }
+    .wl-why-photos .wl-ph img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+      display: block;
+    }
+  </style>
+    <link href="css/custom.css?v=20260804c" rel="stylesheet">
+
+<style id="csr-logo-fix">
+/* CSR logo — unified 100x100 on every page, never stretch */
+header a.logo_normal img,
+header a.logo_sticky img,
+a.logo_normal img,
+a.logo_sticky img,
+.logo_panel img,
+.menu_v4 .logo_panel img,
+.footer-logo img,
+.nav-logo img,
+a.nav-logo img {
+  width: 100px !important;
+  height: 100px !important;
+  max-width: 100px !important;
+  max-height: 100px !important;
+  min-width: 0 !important;
+  min-height: 0 !important;
+  object-fit: contain !important;
+  object-position: center center !important;
+  aspect-ratio: 1 / 1 !important;
+  border-radius: 50% !important; border: none !important;
+}
+header .row.align-items-center { min-height: 100px; }
+header nav ul {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: flex-end !important;
+  gap: 12px;
+}
+header nav ul li {
+  display: inline-flex !important;
+  align-items: center !important;
+  margin-left: 0 !important;
+}
+.nav-wedding-link { display: none !important; }
+@media (max-width: 991px) {
+  header nav ul li.header-wedding-cta { display: none !important; }
+  .nav-wedding-link { display: list-item !important; }
+  header nav ul li:first-child { display: inline-flex !important; }
+  header nav ul { gap: 10px; }
+  header nav ul li a.btn_1 {
+    padding: 10px 14px !important;
+    font-size: 13px !important;
+    line-height: 1 !important;
+    white-space: nowrap;
+  }
+  header .hamburger_2 {
+    top: 0 !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    height: 36px;
+    width: 36px;
+  }
+}
+@media (max-width: 767px) {
+  header .row.align-items-center { min-height: 100px; }
+  header nav ul { gap: 8px; }
+  header nav ul li a.btn_1 {
+    padding: 8px 12px !important;
+    font-size: 12px !important;
+  }
+}
+</style>
+
+      <link href="css/csr-logo.css?v=5" rel="stylesheet">
+      <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-M4SYR32HSQ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-M4SYR32HSQ');
+</script><!-- COMMON SCRIPTS -->
+  </head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <a href="index.html" class="nav-logo" style="text-decoration:none;color:inherit;">
+    <img src="img/logo.png" width="100" height="100" alt="CSR Landmark Resorts">
+    <div class="nav-logo-text">CSR<br>LANDMARK RESORTS</div>
+  </a>
+  <ul class="nav-links">
+    <li><a href="#why">Why Us</a></li>
+    <li><a href="#venues">Venues</a></li>
+    <li><a href="#gallery">Gallery</a></li>
+    <li><a href="#testimonials">Stories</a></li>
+    <li><a href="#packages">Packages</a></li>
+    <li><a href="#faq">FAQ</a></li>
+  </ul>
+  <a href="#cta" class="nav-cta">Book a Visit</a>
+</nav>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-pattern"></div>
+  <div class="hero-ornament"></div>
+  <div class="hero-content">
+    <div class="hero-eyebrow">
+      <span></span> Coimbatore's Premier Wedding Destination <span></span>
+    </div>
+    <h1 class="hero-headline">
+      Where Your Forever<br>Begins <em>in Nature's Embrace</em>
+    </h1>
+    <p class="hero-sub">
+      Breathtaking outdoor lawns, grand banquet halls, and bespoke wedding experiences<br>
+      crafted for couples who deserve nothing less than extraordinary.
+    </p>
+    <div class="hero-actions">
+      <a href="#cta" class="btn-primary">Check Availability</a>
+      <a href="#venues" class="btn-secondary">Explore Venues</a>
+    </div>
+  </div>
+  <div class="hero-scroll">
+    <div class="scroll-line"></div>
+    Discover
+  </div>
+</section>
+
+<!-- TRUST BAR -->
+<div id="trust">
+  <div class="trust-item">
+    <span class="ti-num">500+</span>
+    <span class="ti-label">Weddings<br>Celebrated</span>
+  </div>
+  <div class="trust-divider"></div>
+  <div class="trust-item">
+    <span class="ti-num">2000+</span>
+    <span class="ti-label">Guest<br>Capacity</span>
+  </div>
+  <div class="trust-divider"></div>
+  <div class="trust-item">
+    <span class="ti-num">5 Acres</span>
+    <span class="ti-label">Lush Event<br>Grounds</span>
+  </div>
+  <div class="trust-divider"></div>
+  <div class="trust-item">
+    <span class="ti-num">15+</span>
+    <span class="ti-label">Years of<br>Excellence</span>
+  </div>
+  <div class="trust-divider"></div>
+  <div class="trust-item">
+    <span class="ti-num">4.9★</span>
+    <span class="ti-label">Average<br>Rating</span>
+  </div>
+</div>
+
+<!-- WHY CHOOSE US -->
+<section id="why">
+  <div class="section-eyebrow">Why CSR Landmark</div>
+  <h2 class="section-title">Every Detail Tells<br><em>Your Love Story</em></h2>
+  <p class="section-subtitle">More than a venue — a complete wedding experience designed to honour your traditions, reflect your style, and leave every guest breathless.</p>
+  <div class="wl-why-photos">
+    <div class="wl-ph">
+      <img src="img/banquet/new-amalfi-2.webp" alt="Amalfi Gardens wedding venue" />
+    </div>
+    <div class="wl-ph">
+      <img src="img/banquet/new-french-lawn-1.webp" alt="French Lawn outdoor venue" />
+    </div>
+  </div>
+<div class="why-grid reveal">
+    <div class="why-card">
+      <div class="why-icon">◎</div>
+      <h3>Prime Coimbatore Location</h3>
+      <p>Nestled amidst the beauty of nature, our venue offers an enchanting escape that is beautifully connected. We are perfectly positioned just 30 minutes from the Coimbatore city centre and a short, scenic 20-minute drive from the Isha Yoga Centre—offering your guests a serene retreat without leaving convenience behind.</p>
+    </div>
+    <div class="why-card">
+      <div class="why-icon">⬡</div>
+      <h3>Grand Capacity for Every Scale</h3>
+      <p>From intimate 100-guest celebrations to grand 2000-person weddings, our expansive multi-zone property can be configured to fit your vision without compromise.</p>
+    </div>
+    <div class="why-card">
+      <div class="why-icon">◈</div>
+      <h3>Indoor & Outdoor Spaces</h3>
+      <p>Choose from starlit outdoor lawns for your mandap ceremony or climate-controlled banquet halls for formal receptions — or combine both for a multi-day celebration experience.</p>
+    </div>
+    <div class="why-card">
+      <div class="why-icon">✦</div>
+      <h3>Décor Without Limits</h3>
+      <p>We work with your decorators or connect you with our curated vendor network. Our blank-canvas spaces become whatever you dream — floral, royal, modern, or traditional.</p>
+    </div>
+    <div class="why-card">
+      <div class="why-icon">⊕</div>
+      <h3>Ample Parking & Stay Options</h3>
+      <p>Dedicated parking for 500+ vehicles and proximity to premier hotels ensures a seamless, stress-free experience for every guest — including outstation families and NRI guests.</p>
+    </div>
+    <div class="why-card">
+      <div class="why-icon">◇</div>
+      <h3>Premium Guest Accommodations</h3>
+      <p>Give your guests a luxurious stay right on-site. We offer uniquely themed accommodations, including our elegant French rooms, serene Bali rooms, and premium villas designed for ultimate comfort.</p>
+    </div>
+  </div>
+</section>
+
+
+<!-- ── PHOTO STRIP ── -->
+<div class="wl-photo-strip" style="display:grid;grid-template-columns:1fr 1fr 1fr;height:min(52vw,480px);min-height:280px;max-height:520px;overflow:hidden;gap:3px;">
+  <div style="overflow:hidden;min-height:0;">
+    <img src="img/wedding-landing/wl-06-ff617d9796.webp" alt="Wedding moments at CSR Landmark Resorts" style="width:100%;height:100%;object-fit:cover;object-position:center 20%;transition:transform 0.6s;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'"/>
+  </div>
+  <div style="overflow:hidden;min-height:0;">
+    <img src="img/wedding-landing/wl-07-648c2b952b.webp" alt="Haldi ceremony sunset" style="width:100%;height:100%;object-fit:cover;object-position:center 35%;transition:transform 0.6s;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'"/>
+  </div>
+  <div style="overflow:hidden;min-height:0;">
+    <img src="img/wedding-landing/wl-08-b9a82ff50b.webp" alt="Aerial garden wedding view" style="width:100%;height:100%;object-fit:cover;object-position:center center;transition:transform 0.6s;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'"/>
+  </div>
+</div>
+<!-- VENUES -->
+<section id="venues">
+  <div class="section-eyebrow" style="color:var(--gold)">Our Spaces</div>
+  <h2 class="section-title" style="color:var(--white)">Venues That Set the<br><em>Perfect Scene</em></h2>
+  <p class="section-subtitle">Four distinct spaces, infinite possibilities. Each venue at CSR Landmark Resorts is designed to become the living backdrop of your most cherished memories.</p>
+    <div class="venue-tabs">
+    <button class="vtab active" onclick="showPanel('outdoor', this)">Outdoor Lawn</button>
+    <button class="vtab" onclick="showPanel('banquet', this)">Banquet Hall</button>
+    <button class="vtab" onclick="showPanel('roman', this)">Roman Courtyard</button>
+    <button class="vtab" onclick="showPanel('amalfi', this)">Amalfi Garden</button>
+    <button class="vtab" onclick="showPanel('french', this)">French Lawn</button>
+  </div>
+  <div class="venue-panels">
+    <div class="vpanel active" id="panel-outdoor">
+      <div class="vpanel-visual venue-outdoor" style="background:none;overflow:hidden;">
+        <img src="img/wedding-landing/wl-09-b9a82ff50b.webp" alt="Starlit Outdoor Lawn Wedding Venue Coimbatore" style="width:100%;height:100%;object-fit:cover;display:block;transition:transform 0.6s ease;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'"/>
+      </div>
+      <div class="vpanel-content">
+        <h3>Starlit Outdoor Lawn Weddings</h3>
+        <p>Our signature lawn creates a breathtaking open-air stage for your wedding ceremony. With the Coimbatore sky as your canopy and the gentle Western Ghats breeze as your backdrop, outdoor weddings here are nothing short of magical.</p>
+        <p>Perfect for traditional Tamil, Hindu, and Christian mandap ceremonies — the flat, landscaped grounds accommodate large pandals, stage setups, and elaborate floral mandaps without restriction.</p>
+        <div class="venue-specs">
+          <div class="vspec"><div class="vspec-dot"></div>Up to 2,000 guests — theatre or banquet style</div>
+          <div class="vspec"><div class="vspec-dot"></div>Dedicated stage, mandap, and DJ areas</div>
+          <div class="vspec"><div class="vspec-dot"></div>Backup generator &amp; weather contingency</div>
+          <div class="vspec"><div class="vspec-dot"></div>Natural landscape with manicured gardens</div>
+        </div>
+        <a href="#cta" class="btn-primary" style="font-size:0.75rem;padding:14px 32px">Reserve This Space</a>
+      </div>
+    </div>
+    <div class="vpanel" id="panel-banquet">
+      <div class="vpanel-visual venue-banquet" style="background:none;overflow:hidden;">
+        <img src="img/banquet/ac-1.webp" alt="Banquet Hall Wedding Venue CSR Landmark Resorts" style="width:100%;height:100%;object-fit:cover;display:block;transition:transform 0.6s ease;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'"/>
+      </div>
+      <div class="vpanel-content">
+        <h3>Grand Banquet Hall Celebrations</h3>
+        <p>Our elegantly appointed air-conditioned Banquet Hall is engineered for grandeur. With soaring ceilings, customisable lighting, and a pristine stage focal point, every reception here has the energy of a five-star ballroom experience.</p>
+        <p>Favoured for reception evenings and indoor wedding ceremonies when comfort and opulence matter equally.</p>
+        <div class="venue-specs">
+          <div class="vspec"><div class="vspec-dot"></div>Capacity: 150–300 guests</div>
+          <div class="vspec"><div class="vspec-dot"></div>Full air-conditioning &amp; acoustic comfort</div>
+          <div class="vspec"><div class="vspec-dot"></div>Professional lighting systems</div>
+          <div class="vspec"><div class="vspec-dot"></div>Dedicated catering &amp; service access</div>
+        </div>
+        <a href="#cta" class="btn-primary" style="font-size:0.75rem;padding:14px 32px">Reserve This Space</a>
+      </div>
+    </div>
+    <div class="vpanel" id="panel-roman">
+      <div class="vpanel-visual" style="background:none;overflow:hidden;">
+        <img src="img/banquet/new-roman-1.webp" alt="Roman Courtyard intimate wedding venue Coimbatore" style="width:100%;height:100%;object-fit:cover;display:block;transition:transform 0.6s ease;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'"/>
+      </div>
+      <div class="vpanel-content">
+        <h3>The Roman Courtyard</h3>
+        <p>Capture the timeless elegance of antiquity for your most intimate pre-wedding celebrations in our signature Roman Courtyard. Defined by iconic white Doric columns, it's a picturesque, secluded outdoor space designed for gatherings where every guest is special.</p>
+        <p>Perfect for intimate bridal showers, cozy friends' get-togethers before the wedding, or a sun-drenched, floral Haldi ceremony. The architectural backdrop provides a natural photo opportunity that requires minimal additional decoration.</p>
+        <div class="venue-specs">
+          <div class="vspec"><div class="vspec-dot"></div>50 to 150 guests — intimate seating or floating reception</div>
+          <div class="vspec"><div class="vspec-dot"></div>Dedicated natural stone aisle and ceremony area</div>
+          <div class="vspec"><div class="vspec-dot"></div>Integrated architectural up-lighting for evening events</div>
+          <div class="vspec"><div class="vspec-dot"></div>Manicured Italian-inspired garden borders</div>
+          <div class="vspec"><div class="vspec-dot"></div>Seamless access to adjacent indoor prep areas</div>
+        </div>
+        <a href="#cta" class="btn-primary" style="font-size:0.75rem;padding:14px 32px">Reserve This Space</a>
+      </div>
+    </div>
+    <div class="vpanel" id="panel-amalfi">
+      <div class="vpanel-visual" style="background:none;overflow:hidden;">
+        <img src="img/banquet/new-VJC08116.webp" alt="Grande Amalfi Garden outdoor wedding Coimbatore" style="width:100%;height:100%;object-fit:cover;display:block;transition:transform 0.6s ease;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'"/>
+      </div>
+      <div class="vpanel-content">
+        <h3>Grande Amalfi Garden</h3>
+        <p>Discover the magic of a sprawling, grand outdoor wedding in our expansive Amalfi Garden, designed specifically for big weddings. This vast, perfectly-manicured lawn area is a serene paradise for your dream wedding, with a sweeping landscape that provides a stunning backdrop for your main wedding ceremonies and related rituals. Inspired by the coastal beauty of Amalfi, the venue offers an unparalleled, luxurious space for a grand celebration, all while nestled within the tranquility of nature and the gentle hills.</p>
+        <p>Perfect for massive traditional ceremonies and opulent celebrations—the massive, level grounds can comfortably accommodate large pandals, complex stage designs, and extravagant floral setups without restriction. This is a versatile, grand venue that will transform your wedding visions into reality.</p>
+        <div class="venue-specs">
+          <div class="vspec"><div class="vspec-dot"></div>Up to 2,000 guests — theatre or banquet style</div>
+          <div class="vspec"><div class="vspec-dot"></div>Dedicated spaces for grand stages, mandaps, and DJ areas</div>
+          <div class="vspec"><div class="vspec-dot"></div>Multiple picturesque locations for wedding photography, with natural landscapes and curated gardens</div>
+          <div class="vspec"><div class="vspec-dot"></div>State-of-the-art backup generator &amp; a robust weather contingency plan</div>
+          <div class="vspec"><div class="vspec-dot"></div>Seamless access for large logistics and setup crews for complex multi-day events</div>
+        </div>
+        <a href="#cta" class="btn-primary" style="font-size:0.75rem;padding:14px 32px">Reserve This Space</a>
+      </div>
+    </div>
+    <div class="vpanel" id="panel-french">
+      <div class="vpanel-visual" style="background:none;overflow:hidden;">
+        <img src="img/banquet/new-DJI_20260305071633_0522_D_0001.webp" alt="French Lawn mid-sized garden wedding Coimbatore" style="width:100%;height:100%;object-fit:cover;display:block;transition:transform 0.6s ease;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'"/>
+      </div>
+      <div class="vpanel-content">
+        <h3>French Lawn</h3>
+        <p>Experience the romance of a sophisticated, mid-sized garden oasis. Defined by neat geometric layouts, manicured hedges, and elegant paved pathways, the French Lawn offers a refined European charm for couples seeking a stylish, upscale setting.</p>
+        <p>Perfect for mid-sized wedding ceremonies, vibrant Mehendi functions, and open-air cocktail receptions. The structured landscape naturally frames your layout, providing a picturesque backdrop that requires very little extra decor.</p>
+        <div class="venue-specs">
+          <div class="vspec"><div class="vspec-dot"></div>50 to 300 guests — ideal for mid-sized celebrations</div>
+          <div class="vspec"><div class="vspec-dot"></div>Symmetrical, European-inspired garden design</div>
+          <div class="vspec"><div class="vspec-dot"></div>Paved walkways for a grand bridal entry</div>
+          <div class="vspec"><div class="vspec-dot"></div>Integrated ambient lighting for evening events</div>
+        </div>
+        <a href="#cta" class="btn-primary" style="font-size:0.75rem;padding:14px 32px">Reserve This Space</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section id="gallery">
+  <div class="gallery-intro">
+    <div>
+      <div class="section-eyebrow">Captured Moments</div>
+      <h2 class="section-title">A Glimpse of<br><em>Celebrations Past</em></h2>
+    </div>
+    <a href="image-gallery.html" class="btn-secondary" style="white-space:nowrap;border-color:rgba(217,190,140,0.4);color:var(--text-mid)">View Full Gallery</a>
+  </div>
+  <div class="gallery-grid reveal">
+    <div class="gitem g1" style="position:relative;overflow:hidden;">
+      <img src="img/banquet/new-VJC00938.webp" alt="Grand Lawn aerial — starlit outdoor wedding setup" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform 0.6s ease;"/>
+      <div style="position:absolute;inset:0;background:linear-gradient(to top, rgba(14,36,32,0.75) 0%, transparent 50%);transition:opacity 0.3s;"></div>
+      <div class="gitem-tag">Outdoor Ceremony</div>
+      <div class="gitem-caption" style="position:relative;z-index:2;">Grand Lawn aerial — starlit outdoor wedding setup</div>
+    </div>
+    <div class="gitem g2" style="position:relative;overflow:hidden;">
+      <img src="img/banquet/new-DJI_20260304191911_0424_D_0001.webp" alt="Roman Courtyard evening celebration" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform 0.6s ease;"/>
+      <div style="position:absolute;inset:0;background:linear-gradient(to top, rgba(14,36,32,0.75) 0%, transparent 50%);transition:opacity 0.3s;"></div>
+      <div class="gitem-tag">Roman Courtyard</div>
+      <div class="gitem-caption" style="position:relative;z-index:2;">Roman Courtyard — intimate evening celebration</div>
+    </div>
+    <div class="gitem g3" style="position:relative;overflow:hidden;">
+      <img src="img/banquet/new-VJC08116.webp" alt="Amalfi Gardens landscaped wedding backdrop" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform 0.6s ease;"/>
+      <div style="position:absolute;inset:0;background:linear-gradient(to top, rgba(14,36,32,0.75) 0%, transparent 50%);transition:opacity 0.3s;"></div>
+      <div class="gitem-tag">Amalfi Gardens</div>
+      <div class="gitem-caption" style="position:relative;z-index:2;">Amalfi Gardens — landscaped wedding backdrop</div>
+    </div>
+    <div class="gitem g4" style="position:relative;overflow:hidden;">
+      <img src="img/banquet/new-DJI_20260305071633_0522_D_0001.webp" alt="French Lawn aerial garden wedding space" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform 0.6s ease;"/>
+      <div style="position:absolute;inset:0;background:linear-gradient(to top, rgba(14,36,32,0.75) 0%, transparent 50%);transition:opacity 0.3s;"></div>
+      <div class="gitem-tag">French Lawn</div>
+      <div class="gitem-caption" style="position:relative;z-index:2;">French Lawn — aerial garden wedding space</div>
+    </div>
+    <div class="gitem g5" style="position:relative;overflow:hidden;">
+      <img src="img/banquet/new-VJC08271.webp" alt="Angel Pond serene venue setting" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform 0.6s ease;"/>
+      <div style="position:absolute;inset:0;background:linear-gradient(to top, rgba(14,36,32,0.75) 0%, transparent 50%);transition:opacity 0.3s;"></div>
+      <div class="gitem-tag">Angel Pond</div>
+      <div class="gitem-caption" style="position:relative;z-index:2;">Angel Pond — serene celebration setting</div>
+    </div>
+  </div>
+  
+</section>
+
+<!-- TESTIMONIALS -->
+<section id="testimonials">
+  <div class="center">
+    <div class="section-eyebrow">Love Stories</div>
+    <h2 class="section-title">Couples Who <em>Chose CSR</em></h2>
+    <p class="section-subtitle">Nothing speaks louder than the joy of families who have celebrated their most precious moments with us.</p>
+  </div>
+  <div style="margin-top:40px;margin-bottom:0;height:280px;overflow:hidden;position:relative;border-radius:2px;">
+  <img src="img/wedding-landing/wl-16-746c77db64.webp" alt="Wedding celebrations at CSR Landmark Resorts" style="width:100%;height:100%;object-fit:cover;object-position:center 60%;"/>
+  <div style="position:absolute;inset:0;background:linear-gradient(to right, rgba(28,68,60,0.6) 0%, transparent 60%);"></div>
+  <div style="position:absolute;left:40px;top:50%;transform:translateY(-50%);color:#fff;">
+    <div style="font-family:'Jost',sans-serif;font-size:0.7rem;letter-spacing:0.25em;text-transform:uppercase;color:#D9BE8C;margin-bottom:10px;">Real Celebrations</div>
+    <div style="font-family:'Cormorant Garamond',serif;font-size:2rem;font-weight:300;line-height:1.2;">500+ Weddings<br>Celebrated Here</div>
+  </div>
+</div>
+<div class="testi-grid reveal">
+    <div class="tcard">
+      <div class="tcard-stars">★★★★★</div>
+      <p>"From the very first visit, we knew CSR Landmark was different. The outdoor lawn for our morning wedding ceremony was beyond gorgeous — our guests are still talking about it months later."</p>
+      <div class="tcard-author">
+        <div class="tcard-avatar" style="padding:0;overflow:hidden;"><img src="https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?w=100&q=80" alt="Ananya" style="width:100%;height:100%;object-fit:cover;border-radius:50%;"/></div>
+        <div>
+          <div class="tcard-name">Ananya & Karthik Rajan</div>
+          <div class="tcard-detail">Tamil Wedding · December 2024</div>
+        </div>
+      </div>
+    </div>
+    <div class="tcard featured" style="position:relative;overflow:hidden;">
+      <div style="position:absolute;inset:0;background:url('img/wedding-landing/wl-17-d5f0168cb4.webp') center/cover no-repeat;opacity:0.15;filter:saturate(0.5);"></div>
+      <div class="tcard-stars">★★★★★</div>
+      <p>"We planned our son's wedding from the UK and were worried about managing everything remotely. The CSR team was exceptional — they handled every single detail. The banquet hall looked like something out of a magazine."</p>
+      <div class="tcard-author">
+        <div class="tcard-avatar" style="padding:0;overflow:hidden;"><img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&q=80" alt="Suresh" style="width:100%;height:100%;object-fit:cover;border-radius:50%;"/></div>
+        <div>
+          <div class="tcard-name" style="color:var(--white);">Suresh & Meena Krishnamurthy</div>
+          <div class="tcard-detail">NRI Destination Wedding · January 2025</div>
+        </div>
+      </div>
+    </div>
+    <div class="tcard">
+      <div class="tcard-stars">★★★★★</div>
+      <p>"Three events in two days — mehendi, sangeet, and reception — and everything was flawless. The separate spaces meant each event felt fresh and uniquely designed. Absolutely worth it."</p>
+      <div class="tcard-author">
+        <div class="tcard-avatar" style="padding:0;overflow:hidden;"><img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&q=80" alt="Priya" style="width:100%;height:100%;object-fit:cover;border-radius:50%;"/></div>
+        <div>
+          <div class="tcard-name">Priya & Vikram Subramaniam</div>
+          <div class="tcard-detail">Multi-Day Celebration · March 2025</div>
+        </div>
+      </div>
+    </div>
+    <div class="tcard">
+      <div class="tcard-stars">★★★★★</div>
+      <p>"We had over 1,800 guests and were nervous about logistics. The parking, catering flow, sound system — everything was organized perfectly. Our family could simply enjoy the day."</p>
+      <div class="tcard-author">
+        <div class="tcard-avatar" style="padding:0;overflow:hidden;"><img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=100&q=80" alt="Ramesh" style="width:100%;height:100%;object-fit:cover;border-radius:50%;"/></div>
+        <div>
+          <div class="tcard-name">Ramesh Murugan Family</div>
+          <div class="tcard-detail">Grand Wedding · February 2025</div>
+        </div>
+      </div>
+    </div>
+    <div class="tcard">
+      <div class="tcard-stars">★★★★★</div>
+      <p>"The venue coordinator was available 24/7 leading up to our wedding. She remembered every detail we discussed months earlier. That kind of personal care is rare and we're truly grateful."</p>
+      <div class="tcard-author">
+        <div class="tcard-avatar" style="padding:0;overflow:hidden;"><img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=100&q=80" alt="Deepa" style="width:100%;height:100%;object-fit:cover;border-radius:50%;"/></div>
+        <div>
+          <div class="tcard-name">Deepa & Arun Venkatesh</div>
+          <div class="tcard-detail">Reception & Ceremony · November 2024</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PACKAGES -->
+<section id="packages" style="position:relative;">
+  <div style="position:absolute;inset:0;background:url('https://images.unsplash.com/photo-1522673607200-164d1b6ce486?w=1200&q=85') center/cover no-repeat;opacity:0.12;"></div>
+  <div style="position:relative;z-index:1;">
+  <div class="center">
+    <div class="section-eyebrow" style="justify-content:center;color:var(--gold)">Flexible Packages</div>
+    <h2 class="section-title" style="color:var(--white)">Built Around <em>Your Vision</em></h2>
+    <p class="section-subtitle" style="color:rgba(255,255,255,0.45);margin:0 auto;">We don't believe in rigid packages. Every couple is unique, and every celebration deserves a customised plan.</p>
+  </div>
+  <div class="pkg-grid reveal">
+    <div class="pkg-card">
+      <span class="pkg-badge">For Intimate Celebrations</span>
+      <h3>The Intimate Affair</h3>
+      <p>Designed for close-knit celebrations where intimacy and personal touch matter more than scale. Perfect for engagement ceremonies, reception dinners, and small weddings.</p>
+      <ul class="pkg-features">
+        <li>Up to 300 guests</li>
+        <li>Indoor or garden venue</li>
+        <li>Basic décor framework</li>
+        <li>Dedicated event coordinator</li>
+        <li>Parking for 100+ vehicles</li>
+        <li>Catering vendor flexibility</li>
+      </ul>
+    </div>
+    <div class="pkg-card highlight">
+      <span class="pkg-badge">Most Popular</span>
+      <h3>The Grand Celebration</h3>
+      <p>Our flagship package for the full traditional Tamil or South Indian wedding experience — multiple events across our spaces, over one or two days, with dedicated coordination support.</p>
+      <ul class="pkg-features">
+        <li>500–1,500 guests</li>
+        <li>Outdoor + indoor combo</li>
+        <li>Multi-day event support</li>
+        <li>Premium décor consultation</li>
+        <li>AV & lighting systems</li>
+        <li>Dedicated bridal suite</li>
+        <li>Full vendor coordination</li>
+      </ul>
+    </div>
+    <div class="pkg-card">
+      <span class="pkg-badge">For Destination Weddings</span>
+      <h3>The NRI Experience</h3>
+      <p>Crafted specifically for families planning from abroad — with remote planning support, trusted vendor recommendations, and a seamless on-ground team to execute your vision.</p>
+      <ul class="pkg-features">
+        <li>Full remote planning assistance</li>
+        <li>Virtual venue walkthroughs</li>
+        <li>Hotel & stay coordination</li>
+        <li>Airport transfer support</li>
+        <li>All venue options available</li>
+        <li>Multilingual coordinator</li>
+      </ul>
+    </div>
+  </div>
+  <div style="text-align:center;margin-top:48px;">
+    <p style="font-family:'Jost',sans-serif;font-size:0.88rem;font-weight:300;color:rgba(255,255,255,0.35);margin-bottom:24px;">All packages are fully customisable. Speak with our team for a tailored quote.</p>
+    <a href="#cta" class="btn-primary">Get a Custom Quote</a>
+  </div>
+  </div>
+</section>
+
+<!-- CTA SECTION -->
+<section id="cta">
+  <div class="cta-inner">
+    <div class="cta-content reveal">
+      <div class="section-eyebrow">Limited Dates Available</div>
+      <h2 class="section-title">Start Your Wedding<br><em>Journey Today</em></h2>
+      <p>Prime dates for 2026–27 are filling quickly. Reach out now to check availability, schedule a personalised site visit, and speak with our dedicated wedding team.</p>
+      <div class="cta-urgency">
+        <div class="urgency-dot"></div>
+        Dates for Nov–Feb season are booking fast — reserve yours today
+      </div>
+      <div style="margin-top:28px;border-radius:2px;overflow:hidden;background:#0E2420;line-height:0;">
+        <img src="img/wedding-landing/wl-18-93fdae697d.webp" alt="Wedding venue at CSR Landmark Resorts" width="1200" height="675" style="width:100%;height:auto;display:block;aspect-ratio:16/9;object-fit:contain;"/>
+      </div>
+      <div style="margin-top:24px;display:flex;flex-direction:column;gap:14px;">
+        <div style="font-family:'Jost',sans-serif;font-size:0.82rem;font-weight:300;color:var(--text-mid);display:flex;align-items:center;gap:12px;">
+          <span style="color:var(--gold);">✓</span> No booking fee for site visits
+        </div>
+        <div style="font-family:'Jost',sans-serif;font-size:0.82rem;font-weight:300;color:var(--text-mid);display:flex;align-items:center;gap:12px;">
+          <span style="color:var(--gold);">✓</span> Response within 2 business hours
+        </div>
+        <div style="font-family:'Jost',sans-serif;font-size:0.82rem;font-weight:300;color:var(--text-mid);display:flex;align-items:center;gap:12px;">
+          <span style="color:var(--gold);">✓</span> Custom proposal sent within 24 hours
+        </div>
+      </div>
+    </div>
+    <div class="cta-form reveal">
+      <div class="form-title">Request a Visit or Quote</div>
+      <div class="form-group">
+        <label>Your Name</label>
+        <input type="text" placeholder="e.g. Priya & Arjun" />
+      </div>
+      <div class="form-row">
+        <div class="form-group">
+          <label>Phone Number</label>
+          <input type="tel" placeholder="+91 95850 99993" />
+        </div>
+        <div class="form-group">
+          <label>Email Address</label>
+          <input type="email" placeholder="your@email.com" />
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group">
+          <label>Wedding Date</label>
+          <input type="date" />
+        </div>
+        <div class="form-group">
+          <label>Estimated Guest Count</label>
+          <select>
+            <option value="">Select range</option>
+            <option>Under 300</option>
+            <option>300 – 700</option>
+            <option>700 – 1200</option>
+            <option>1200 – 2000</option>
+            <option>2000+</option>
+          </select>
+        </div>
+      </div>
+      <div class="form-group">
+        <label>Event Type</label>
+        <select>
+          <option value="">Select event</option>
+          <option>Full Wedding (Ceremony + Reception)</option>
+          <option>Reception Only</option>
+          <option>Engagement Ceremony</option>
+          <option>Multi-Day Wedding Package</option>
+          <option>Corporate or Private Event</option>
+        </select>
+      </div>
+      <button class="btn-form" onclick="handleSubmit()">Check Availability & Book Visit</button>
+      <p class="form-note">We respect your privacy. No spam, ever.</p>
+    </div>
+  </div>
+</section>
+
+<!-- LOCATION -->
+<section id="location">
+  <div class="section-eyebrow" style="color:var(--gold)">Getting Here</div>
+  <h2 class="section-title" style="color:var(--white)">Coimbatore — South India's<br><em>Hidden Wedding Gem</em></h2>
+  <div class="loc-grid">
+    <div class="loc-benefits reveal">
+      <div class="loc-item">
+        <div class="loc-num">01</div>
+        <div>
+          <h4>Nestled Amidst Nature</h4>
+          <p>Immerse your wedding celebrations in a serene, green oasis. Surrounded by lush natural landscapes and the gentle breeze of the Western Ghats, our venue provides a tranquil, picturesque backdrop for your special day.</p>
+        </div>
+      </div>
+      <div class="loc-item">
+        <div class="loc-num">02</div>
+        <div>
+          <h4>30 Minutes from City Centre</h4>
+          <p>Enjoy the luxury of a secluded nature retreat without leaving convenience behind. CSR Landmark Resorts is located just a short, effortless 30-minute drive from the Coimbatore city centre.</p>
+        </div>
+      </div>
+      <div class="loc-item">
+        <div class="loc-num">03</div>
+        <div>
+          <h4>Premium Guest Accommodations</h4>
+          <p>Give your guests a luxurious stay right on-site. We offer uniquely themed accommodations, including our elegant French rooms, serene Bali rooms, and premium villas designed for ultimate comfort.</p>
+        </div>
+      </div>
+      <div class="loc-item">
+        <div class="loc-num">04</div>
+        <div>
+          <h4>Ideal Climate for Outdoor Weddings</h4>
+          <p>Coimbatore's pleasant climate — particularly from October to February — makes it one of the best cities in Tamil Nadu for spectacular outdoor wedding ceremonies throughout the year.</p>
+        </div>
+      </div>
+    </div>
+    <div class="loc-map reveal">
+      <img src="img/wedding-landing/wl-19-746c77db64.webp" alt="CSR Landmark Resorts aerial view" />
+      <div class="loc-map-pattern"></div>
+      <div class="loc-map-pin">
+        <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+          <path d="M20 4C13.4 4 8 9.4 8 16C8 25 20 38 20 38C20 38 32 25 32 16C32 9.4 26.6 4 20 4Z" stroke="#D9BE8C" stroke-width="1.5" fill="rgba(217,190,140,0.1)"/>
+          <circle cx="20" cy="16" r="5" stroke="#D9BE8C" stroke-width="1.5" fill="rgba(217,190,140,0.2)"/>
+        </svg>
+        CSR Landmark Resorts<br>Coimbatore, Tamil Nadu
+      </div>
+      <a href="https://maps.google.com/?q=CSR+Landmark+Resorts+Coimbatore" target="_blank" 
+     style="display:inline-block;margin-top:8px;font-family:'Jost',sans-serif;font-size:0.75rem;
+     letter-spacing:0.14em;text-transform:uppercase;color:#D9BE8C;border:1px solid rgba(217,190,140,0.4);
+     padding:10px 20px;text-decoration:none;transition:all 0.2s;position:relative;z-index:2;"
+     onmouseover="this.style.background='rgba(217,190,140,0.1)'" 
+     onmouseout="this.style.background='transparent'">
+  📍 Open in Google Maps
+</a>
+      <div class="loc-address">
+        <p>CSR Landmark Resorts<br>Thenkarai Village, Mathipalayam, Perur<br>
+        📞 +91 95850 99993<br>
+        ✉ <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="9ef7f0f8f1defdedecf2fff0faf3ffecf5ecfbedf1eceaedb0fdf1f3">[email&#160;protected]</a></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="faq" style="position:relative;">
+  <div style="position:absolute;inset:0;background:url('https://images.unsplash.com/photo-1478146059778-26028b07395a?w=1200&q=85') center/cover no-repeat;opacity:0.06;pointer-events:none;"></div>
+  <div class="center">
+    <div class="section-eyebrow" style="justify-content:center">Common Questions</div>
+    <h2 class="section-title">Everything You <em>Need to Know</em></h2>
+    <p class="section-subtitle">Have a question not answered here? Our team is available 7 days a week to help.</p>
+  </div>
+  <div class="faq-list">
+    <div class="faq-item">
+      <button type="button" class="faq-q" onclick="toggleFaq(this)" aria-expanded="false">
+        <span>Is CSR Landmark Resorts the best wedding venue in Coimbatore?</span>
+        <div class="faq-icon">+</div>
+      </button>
+      <div class="faq-a"><p>While "best" is subjective, CSR Landmark Resorts stands out as a premier choice for premium weddings in Coimbatore. Tucked away amidst serene nature yet located just 30 minutes from the city centre and 20 minutes from the Isha Yoga Centre, we offer a perfect blend of secluded romance, versatile multi-venue options, and premium on-site guest accommodations.</p></div>
+    </div>
+    <div class="faq-item">
+      <button type="button" class="faq-q" onclick="toggleFaq(this)" aria-expanded="false">
+        <span>What outdoor wedding venues are available at CSR Landmark?</span>
+        <div class="faq-icon">+</div>
+      </button>
+      <div class="faq-a"><p>We offer a curated selection of distinct outdoor settings tailored to the size and style of your celebration:<br><br><strong>Grande Amalfi Garden:</strong> An expansive, beautifully landscaped space perfect for grand, large-scale outdoor weddings.<br><strong>Enchanting French Lawn:</strong> A sophisticated, mid-sized garden oasis featuring geometric layouts and elegant paved pathways.<br><strong>Intimate Roman Courtyard:</strong> A picturesque space defined by iconic white Doric columns, perfect for pre-wedding functions.</p></div>
+    </div>
+    <div class="faq-item">
+      <button type="button" class="faq-q" onclick="toggleFaq(this)" aria-expanded="false">
+        <span>What is the guest capacity at CSR Landmark Resorts?</span>
+        <div class="faq-icon">+</div>
+      </button>
+      <div class="faq-a"><p>Because we offer multiple venue spaces, we can easily cater to events of all sizes:<br><br><strong>Intimate Roman Courtyard:</strong> Accommodates 50 to 150 guests (ideal for bridal showers, pre-wedding parties, or Haldi).<br><strong>Enchanting French Lawn:</strong> Accommodates 50 to 300 guests (perfect for mid-sized weddings and cocktail receptions).<br><strong>Grand Banquet Hall:</strong> Accommodates 150 to 300 guests for indoor celebrations.<br><strong>Grande Amalfi Garden:</strong> Sprawling space that comfortably hosts up to 2,000 guests for massive celebrations.</p></div>
+    </div>
+    <div class="faq-item">
+      <button type="button" class="faq-q" onclick="toggleFaq(this)" aria-expanded="false">
+        <span>What are the wedding venue pricing options in Coimbatore?</span>
+        <div class="faq-icon">+</div>
+      </button>
+      <div class="faq-a"><p>Wedding venue pricing in Coimbatore varies greatly depending on the season, guest count, and whether you choose an indoor hall or an outdoor lawn layout. At CSR Landmark Resorts, we offer flexible, customized packages tailored to your specific events—from intimate pre-wedding functions to multi-day grand wedding takeovers. Contact our events team for a personalized quote.</p></div>
+    </div>
+    <div class="faq-item">
+      <button type="button" class="faq-q" onclick="toggleFaq(this)" aria-expanded="false">
+        <span>Can we plan a destination wedding at CSR Landmark from abroad?</span>
+        <div class="faq-icon">+</div>
+      </button>
+      <div class="faq-a"><p>Absolutely. We specialize in hosting seamless destination weddings. With premium on-site guest accommodations (including our elegant French rooms, serene Bali rooms, and premium villas) and an expert vendor coordination network, your international and outstation guests can check in and enjoy the entire celebration in one place without travel stress.</p></div>
+    </div>
+    <div class="faq-item">
+      <button type="button" class="faq-q" onclick="toggleFaq(this)" aria-expanded="false">
+        <span>Is CSR Landmark suitable for traditional Tamil and Hindu weddings?</span>
+        <div class="faq-icon">+</div>
+      </button>
+      <div class="faq-a"><p>Yes, our venues are perfectly designed for traditional celebrations. Our sprawling lawns, particularly the Grande Amalfi Garden, feature flat, level, and expertly landscaped grounds that allow complete freedom to set up large traditional pandals, heavy stage setups, and elaborate floral mandaps without structural restrictions.</p></div>
+    </div>
+    <div class="faq-item">
+      <button type="button" class="faq-q" onclick="toggleFaq(this)" aria-expanded="false">
+        <span>How far in advance should we book the venue?</span>
+        <div class="faq-icon">+</div>
+      </button>
+      <div class="faq-a"><p>Because Coimbatore experiences highly sought-after wedding dates (particularly during the peak Muhurtham season from October to February), we recommend booking 6 to 12 months in advance to secure your preferred dates and venue spaces.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<!-- FOOTER PHOTO STRIP -->
+<div style="display:grid;grid-template-columns:1fr 1fr 1fr;height:180px;overflow:hidden;border-top:2px solid rgba(217,190,140,0.2);">
+  <div style="overflow:hidden;position:relative;">
+    <img src="img/wedding-landing/wl-20-93fdae697d.webp" alt="Wedding venue" style="width:100%;height:180px;object-fit:cover;filter:brightness(0.7);"/>
+    <div style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-family:'Cormorant Garamond',serif;color:rgba(217,190,140,0.9);font-size:0.9rem;font-style:italic;">Outdoor Spaces</div>
+  </div>
+  <div style="overflow:hidden;position:relative;">
+    <img src="img/wedding-landing/wl-21-b9a82ff50b.webp" alt="Garden wedding" style="width:100%;height:180px;object-fit:cover;filter:brightness(0.7);"/>
+    <div style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-family:'Cormorant Garamond',serif;color:rgba(217,190,140,0.9);font-size:0.9rem;font-style:italic;">Garden Lawns</div>
+  </div>
+  <div style="overflow:hidden;position:relative;">
+    <img src="img/wedding-landing/wl-22-bb2c86fd74.webp" alt="Banquet" style="width:100%;height:180px;object-fit:cover;filter:brightness(0.7);"/>
+    <div style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-family:'Cormorant Garamond',serif;color:rgba(217,190,140,0.9);font-size:0.9rem;font-style:italic;">Grand Events</div>
+  </div>
+</div>
+<footer>
+  <div class="footer-top">
+    <div class="footer-brand">
+      <a href="index.html" class="footer-logo" style="text-decoration:none;color:inherit;">
+        <img src="img/logo.png" width="100" height="100" alt="CSR Landmark Resorts">
+        <div style="font-family:'Cinzel',serif;color:var(--gold);font-size:0.7rem;letter-spacing:0.18em;line-height:1.6;">CSR<br>LANDMARK RESORTS</div>
+      </a>
+      <p>Coimbatore's premier wedding destination — where natural beauty, elegant architecture, and exceptional hospitality come together to make your most cherished day truly unforgettable.</p>
+      <div class="footer-socials">
+        <a href="#" class="social-btn">f</a>
+        <a href="#" class="social-btn">in</a>
+        <a href="#" class="social-btn">yt</a>
+        <a href="#" class="social-btn">📸</a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h4>Explore</h4>
+      <ul class="footer-links">
+        <li><a href="#why">Why CSR Landmark</a></li>
+        <li><a href="#venues">Our Venues</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#testimonials">Love Stories</a></li>
+        <li><a href="#packages">Packages</a></li>
+        <li><a href="#faq">FAQs</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Celebrations</h4>
+      <ul class="footer-links">
+        <li><a href="#cta">Tamil Weddings</a></li>
+        <li><a href="#cta">Hindu Ceremonies</a></li>
+        <li><a href="#cta">Christian Weddings</a></li>
+        <li><a href="#cta">NRI Destination Weddings</a></li>
+        <li><a href="#cta">Reception Events</a></li>
+        <li><a href="#cta">Corporate Celebrations</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Contact</h4>
+      <div class="footer-contact">
+        <div class="fcontact">📍 First Street, Thenkarai Village,<br>Mathipalayam, Perur, Coimbatore — 641010</div>
+        <div class="fcontact">✉ <a href="mailto:gm@csrlandmarkresorts.com" style="color:rgba(255,255,255,0.55);text-decoration:none;">gm@csrlandmarkresorts.com</a></div>
+        <div class="fcontact">📞 <a href="tel:+919585099993">+91 95850 99993</a></div>
+        <div class="fcontact">✉ <a href="/cdn-cgi/l/email-protection#a2cbccc4cde2c1d1d0cec3ccc6cfc3d0c9d0c7d1cdd0d6d18cc1cdcf"><span class="__cf_email__" data-cfemail="167f787079567565647a7778727b77647d647365796462653875797b">[email&#160;protected]</span></a></div>
+        <div class="fcontact">🌐 <a href="https://csrlandmarkresorts.com">csrlandmarkresorts.com</a></div>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2026 CSR Landmark Resorts. All rights reserved.</p>
+    <p class="footer-meta">Wedding Venue in Coimbatore · Luxury Wedding Resorts Tamil Nadu · Outdoor Wedding Venues Coimbatore</p>
+  </div>
+</footer>
+
+<!-- STICKY CTA -->
+<div class="sticky-cta" id="stickyCta" style="display:none;">
+  <a href="#cta" class="sticky-btn">Book a Visit</a>
+  <a href="tel:+919585099993" class="sticky-call">📞 Call Us Now</a>
+</div>
+
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+  // Venue tabs
+  function showPanel(id, btn) {
+    document.querySelectorAll('.vpanel').forEach(p => p.classList.remove('active'));
+    document.querySelectorAll('.vtab').forEach(b => b.classList.remove('active'));
+    document.getElementById('panel-' + id).classList.add('active');
+    btn.classList.add('active');
+  }
+
+  // FAQ accordion — clickable questions; answers expand fully
+  function toggleFaq(btn) {
+    const item = btn.closest('.faq-item');
+    if (!item) return;
+    
+    const answer = item.querySelector('.faq-a');
+    if (!answer) return;
+    
+    const isOpen = item.classList.contains('open');
+    
+    // Close all items first
+    document.querySelectorAll('.faq-item').forEach(i => {
+      i.classList.remove('open');
+      const a = i.querySelector('.faq-a');
+      if (a) a.style.maxHeight = '0px';
+      const q = i.querySelector('.faq-q');
+      if (q) q.setAttribute('aria-expanded', 'false');
+    });
+    
+    // Open clicked item if it was closed
+    if (!isOpen) {
+      item.classList.add('open');
+      btn.setAttribute('aria-expanded', 'true');
+      answer.style.maxHeight = '2000px';
+    }
+  }
+
+  // Reveal on scroll
+  const reveals = document.querySelectorAll('.reveal');
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+  }, { threshold: 0.1 });
+  reveals.forEach(r => observer.observe(r));
+
+  // Sticky CTA
+  window.addEventListener('scroll', () => {
+    const sticky = document.getElementById('stickyCta');
+    if (window.scrollY > 600) {
+      sticky.style.display = 'flex';
+    } else {
+      sticky.style.display = 'none';
+    }
+  });
+</script>
+</body>
+</html>

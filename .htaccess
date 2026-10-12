@@ -1,0 +1,28 @@
+RewriteEngine On
+
+# Global redirect: www to non-www
+RewriteCond %{HTTP_HOST} ^www\.csrlandmarkresorts\.com$ [NC]
+RewriteRule ^(.*)$ https://csrlandmarkresorts.com/$1 [R=301,L]
+
+RewriteCond %{THE_REQUEST} \s/+index\.html[\s?] [NC]
+RewriteRule ^index\.html$ / [R=301,L]
+RewriteRule ^dayout_resort_in_coimbatore\.html$ /dayout-resort-in-coimbatore.html [R=301,L]
+RewriteRule ^Resort-Near-Isha\.html$ /resort-near-isha.html [R=301,L]
+
+RewriteRule ^Outdoor-Wedding-in-Coimbatore\.html$ /outdoor-wedding-in-coimbatore.html [R=301,L]
+RewriteRule ^Types-of-Rooms-CSR-Landmark-Resorts\.html$ /types-of-rooms-csr-landmark-resorts.html [R=301,L]
+RewriteRule ^Luxury-Outdoor-Wedding-in-Coimbatore\.html$ /luxury-outdoor-wedding-in-coimbatore.html [R=301,L]
+RewriteRule ^Resort-Near-Isha-Yoga-Center-Coimbatore\.html$ /resort-near-isha-yoga-center-coimbatore.html [R=301,L]
+RewriteRule ^Celebrations-at-CSR-Landmark-Resorts\.html$ /celebrations-at-csr-landmark-resorts.html [R=301,L]
+RewriteRule ^Outdoor-vs-Indoor-Wedding-Coimbatore\.html$ /outdoor-vs-indoor-wedding-coimbatore.html [R=301,L]
+RewriteRule ^Destination-Wedding-Guide-Coimbatore\.html$ /destination-wedding-guide-coimbatore.html [R=301,L]
+RewriteRule ^Cost-of-a-Resort-Wedding-in-Coimbatore\.html$ /cost-of-a-resort-wedding-in-coimbatore.html [R=301,L]
+RewriteRule ^Resort-Wedding-in-Coimbatore-Garden\.html$ /resort-wedding-in-coimbatore-garden.html [R=301,L]
+RewriteRule ^Resort-Wedding-Venues-Coimbatore-Value\.html$ /resort-wedding-venues-coimbatore-value.html [R=301,L]
+RewriteRule ^Perfect-Wedding-Venue-Coimbatore-2026\.html$ /perfect-wedding-venue-coimbatore-2026.html [R=301,L]
+RewriteRule ^Luxury-Resort-in-Coimbatore\.html$ /luxury-resort-in-coimbatore.html [R=301,L]
+RewriteRule ^Top-Wedding-Venue-in-Coimbatore\.html$ /top-wedding-venue-in-coimbatore.html [R=301,L]
+RewriteRule ^Best-Day-Out-in-Coimbatore\.html$ /best-day-out-in-coimbatore.html [R=301,L]
+RewriteRule ^Destination-Wedding\.html$ /destination-wedding.html [R=301,L]
+RewriteRule ^Luxury-Stay-Nature-Retreat\.html$ /luxury-stay-nature-retreat.html [R=301,L]
+RewriteRule ^Corporate-Outing-in-Coimbatore\.html$ /corporate-outing-in-coimbatore.html [R=301,L]

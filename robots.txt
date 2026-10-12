@@ -1,0 +1,92 @@
+# ============================================
+# csrlandmarkresorts.com — robots.txt
+# ============================================
+
+# Default — allow all standard crawlers
+User-agent: *
+Allow: /
+
+# ------------------------------------------------
+# Answer-engine crawlers — explicitly allowed
+# (these power AI Overviews, ChatGPT/Perplexity/
+# Copilot answers — good for AEO/GEO visibility)
+# ------------------------------------------------
+User-agent: GPTBot
+Allow: /
+Content-Signal: search=yes, ai-train=no
+
+User-agent: OAI-SearchBot
+Allow: /
+Content-Signal: search=yes, ai-train=no
+
+User-agent: ChatGPT-User
+Allow: /
+Content-Signal: search=yes, ai-train=no
+
+User-agent: ClaudeBot
+Allow: /
+Content-Signal: search=yes, ai-train=no
+
+User-agent: Claude-User
+Allow: /
+Content-Signal: search=yes, ai-train=no
+
+User-agent: Claude-SearchBot
+Allow: /
+Content-Signal: search=yes, ai-train=no
+
+User-agent: PerplexityBot
+Allow: /
+Content-Signal: search=yes, ai-train=no
+
+User-agent: Perplexity-User
+Allow: /
+Content-Signal: search=yes, ai-train=no
+
+User-agent: Google-Extended
+Allow: /
+Content-Signal: search=yes, ai-train=no
+
+User-agent: Applebot-Extended
+Allow: /
+Content-Signal: search=yes, ai-train=no
+
+User-agent: Bingbot
+Allow: /
+Content-Signal: search=yes, ai-train=no
+
+User-agent: meta-externalagent
+Allow: /
+Content-Signal: search=yes, ai-train=no
+
+# ------------------------------------------------
+# Training-only scrapers — explicitly blocked
+# (no search/answer benefit, just harvest content
+# for model training or resale)
+# ------------------------------------------------
+User-agent: CCBot
+Disallow: /
+
+User-agent: Bytespider
+Disallow: /
+
+User-agent: Diffbot
+Disallow: /
+
+User-agent: ImagesiftBot
+Disallow: /
+
+User-agent: Omgili
+Disallow: /
+
+User-agent: Omgilibot
+Disallow: /
+
+User-agent: FacebookBot
+Disallow: /
+
+User-agent: Amazonbot
+Disallow: /
+
+# Sitemap
+Sitemap: https://csrlandmarkresorts.com/sitemap.xml
